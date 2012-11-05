@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SharpCms.Core.DataObjects.Containers">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataObjects\Containers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SharpCms.Core.DataObjects.Element">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACBAAAAAAAAQAACAAAAgQAAAAAACAAAIAAAAAAAAA=</HashCode>
+      <FileName>DataObjects\Element.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SharpCms.Core.DataObjects.GroupInfo">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAEAE=</HashCode>
+      <FileName>DataObjects\GroupInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SharpCms.Core.DataObjects.PageInfo">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgCAEABAEAlEAAAEAAEAAABAACAAEAAAAAAAgAAAAA=</HashCode>
+      <FileName>DataObjects\PageInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SharpCms.Core.DataObjects.Page">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAEAAAA=</HashCode>
+      <FileName>DataObjects\Page.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SharpCms.Core.DataObjects.PageModel">
+    <Position X="1" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAQAAASBAAAAAAAAgAAAAgAAAACAAACAAA=</HashCode>
+      <FileName>DataObjects\PageModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SharpCms.Core.DataObjects.UserInfo">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEAAAAAAAAAAAQAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataObjects\UserInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="SharpCms.Core.DataObjects.NavState" Collapsed="true">
+    <Position X="1" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>DataObjects\NavState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SharpCms.Core.DataObjects.PageState" Collapsed="true">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAABAAA=</HashCode>
+      <FileName>DataObjects\PageState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SharpCms.Core.DataObjects.ViewState" Collapsed="true">
+    <Position X="9.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataObjects\ViewState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
