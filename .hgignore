@@ -1,0 +1,27 @@
+syntax: glob
+**/_ReSharper*
+**/obj*
+**/bin*
+**/*.suo*
+**/*.suo
+**/*.dotCover
+**/*crunchsolution*
+**/*crunchproject*
+**/*.user.orig
+**/StyleCop.Cache
+**/*.ReSharper.user
+**/*.ReSharper.user*
+**/*.orig
+**/*.csproj.user
+**/*.user
+**/*.DotSettings.user
+**/*.sln.DotSettings.user
+OfflineDocumentArchive/OfflineDocumentArchive.sln.DotSettings.user
+.hgignore.orig
+OfflineDocumentArchive/OfflineDocumentArchive.Server/Modules/*.dll
+OfflineDocumentArchive/OfflineDocumentArchive.Server/Modules/*.pdb
+**/*.nupkg
+OfflineDocumentArchive/OfflineDocumentArchive.Server/Updates/ODA.Server.DummyModule.dll
+OfflineDocumentArchive/OfflineDocumentArchive.Server/Updates/ODA.Server.DummyModule2.dll
+OfflineDocumentArchive/OfflineDocumentArchive.Server/Updates/ODA.Client.*.nupkg
+**/packages/**/*.dll-*
