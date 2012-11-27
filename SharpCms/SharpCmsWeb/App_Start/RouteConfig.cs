@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Web;
+using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace SharpCmsWeb
@@ -11,9 +12,18 @@ namespace SharpCmsWeb
 
             routes.MapRoute(
                 name: "Default",
-                url: "{id}",
-                defaults: new { controller = "Page", action = "PageView", id = UrlParameter.Optional }
-            );
+                url: "{page1}/{page2}/{page3}/{page4}/{page5}",
+                defaults: new
+                    {
+                        controller = "Page",
+                        action = "PageView",
+                        page1 = string.Empty,
+                        page2 = string.Empty,
+                        page3 = string.Empty,
+                        page4 = string.Empty,
+                        page5 = string.Empty
+                    }
+                );
         }
     }
 }

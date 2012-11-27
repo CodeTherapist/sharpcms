@@ -51,6 +51,7 @@
     <Compile Include="DataObjects\PageState.cs" />
     <Compile Include="DataObjects\UserInfo.cs" />
     <Compile Include="DataObjects\ViewState.cs" />
+    <Compile Include="Data\TempData.cs" />
     <Compile Include="PageController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

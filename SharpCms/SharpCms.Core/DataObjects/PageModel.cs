@@ -12,7 +12,7 @@ namespace SharpCms.Core.DataObjects
         public UserInfo CurrentUser { get; set; }
         public IEnumerable<string> History { get; set; }
 
-        public IEnumerable<PageInfo> SiteTree { get; set; }
+        public PageInfo SiteTree { get; set; }
         
         public Page Page { get; set; }
 

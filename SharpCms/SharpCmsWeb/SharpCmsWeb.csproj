@@ -236,8 +236,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\PageTemplate.cshtml" />
-    <Content Include="Views\Shared\BoldTemplate.cshtml" />
+    <Content Include="Views\Shared\TemplateB.cshtml" />
+    <Content Include="Views\Shared\TemplateA.cshtml" />
+    <Content Include="Views\Shared\Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
