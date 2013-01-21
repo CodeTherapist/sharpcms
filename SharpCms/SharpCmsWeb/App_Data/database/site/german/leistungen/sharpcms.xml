@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>sharpcms</pagename>
+    <name>sharpcms</name>
+    <menuname>sharpcms</menuname>
+    <pageidentifier>german/leistungen/sharpcms</pageidentifier>
+    <status>hide</status>
+    <template></template>
+    <metakeywords>sharpcmc, open source, cms</metakeywords>
+    <metadescription>Was bietet Ihnen das sharpcms?</metadescription>
+    <lastedited>jg</lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Das Open Source Content management System sharpcms</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;p&gt;Mit Hilfe des Open Source Content Management Systems &lt;a href="http://www.sharpcms.org/"&gt;sharpcms&lt;/a&gt;, lassen sich schnell und kosteng&amp;uuml;nstig, auf dem neuesten Standard basierende Webseiten entwickeln, gestalten und vor allem Pflegen. &lt;/p&gt;&lt;p&gt;Warum Sie sich f&amp;uuml;r eine Internetpr&amp;auml;sentation mit dem Open Source Content Management System &lt;a href="http://www.sharpcms.org/"&gt;sharpcms&lt;/a&gt; entscheiden sollten:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Das CMS kann kostenfrei eingesetzt werden (da Open Source).&lt;/li&gt;&lt;li&gt;Es ben&amp;ouml;tigt keine Datenbank (senkt die Kosten).&lt;/li&gt;&lt;li&gt;Sie verwalten und bearbeiten Ihre Inhalte selber.&lt;/li&gt;&lt;li&gt;Man kann von &amp;uuml;berall mit einem Browser auf das System zugreifen.&lt;/li&gt;&lt;li&gt;Intuitive Bedienung&lt;/li&gt;&lt;li&gt;Minimaler Schulungsaufwand&lt;/li&gt;&lt;li&gt;Das CMS generiert standardkonformes HTML (optimal auch f&amp;uuml;r Suchmaschinen).&lt;/li&gt;&lt;li&gt;Das System ist hoch flexibel bei der Entwicklung von Internetpr&amp;auml;senzen&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Mehr zum sharpcms erfahren Sie &lt;a href="show/german/products/sharpcms.de.aspx"&gt;hier&lt;/a&gt; sowie auf &lt;a href="http://www.sharpcms.org"&gt;http://www.sharpcms.org&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

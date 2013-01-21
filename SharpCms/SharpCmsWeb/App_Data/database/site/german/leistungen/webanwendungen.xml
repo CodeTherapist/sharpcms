@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Webanwendungen</pagename>
+    <name>webanwendungen</name>
+    <menuname>Webanwendungen</menuname>
+    <pageidentifier>german/leistungen/webanwendungen</pageidentifier>
+    <status>hide</status>
+    <lastedited>24.07.2008</lastedited>
+    <metakeywords>webwntwicklung, webanwendung, anwendung, programmierung</metakeywords>
+    <metadescription>Ihre individuelle Webanwendung</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Ihre individuelle Webanwendung</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;p&gt;Sie ben&amp;ouml;tigen eine Software, die zentral verwaltet, nur einmal installiert, bequem wartbar&amp;nbsp;und f&amp;uuml;r mehrere Personen ohne zusatzinstallationen erreichbar sein soll?&lt;/p&gt;&lt;p&gt;Das bietet Ihnen eine Webanwendung. Eine Webanwendung wird einmal an einer zentralen Stelle (auf einem Webserver) installiert. Jeder berechtigte Mitarbeiter erreichtdie Software mit dem bereits installeirten Webbrowser. &lt;/p&gt;&lt;h2&gt;Die Vorteile auf einem Blick:&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Es ist nur eine Installation notwendig&lt;/li&gt;&lt;li&gt;Die Wartung der Software findet an einer Stelle statt&lt;/li&gt;&lt;li&gt;Die Software ist kann von &amp;uuml;berall erreichbar sein&lt;/li&gt;&lt;li&gt;Der Zugriff erfolgt &amp;uuml;ber einen Webbrowser&lt;/li&gt;&lt;li&gt;Keine zus&amp;auml;tzlichen Installationen auf den Clients notwendig&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;Ihre individuelle Software&lt;/h2&gt;&lt;p&gt;Mit Hilfe der, auf Microsofts .NET Framework basierenden, Technik ASP.NET bin ich in der Lage Ihre individuelle Webanwendung zu planen und zu erstellen. Wie auch bei der Erstellung von Internetpr&amp;auml;sentationen lege ich gro&amp;szlig;en Wert auf aktuelle Standards und zukunftsorientierte Softwareentwicklung. &lt;/p&gt;&lt;p&gt;Gerne berate ich Sie pers&amp;ouml;nlich. Vereinbaren Sie einfach ganz bequem einen Termin &amp;uuml;ber das &lt;a href="show/german/impressum/kontakt.aspx"&gt;Kontaktformular&lt;/a&gt;.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

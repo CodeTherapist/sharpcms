@@ -1,28 +1,29 @@
-﻿@model SharpCms.Core.DataObjects.PageInfo
+﻿@using SharpCms.Core.DataObjects
+@model SharpCms.Core.DataObjects.PageInfo
 @{
     var path = string.Empty;
 }
 
 <ul>
-    @foreach (var page1 in Model.Children)
+    @foreach (var page1 in Model.Children.Where(x=> x.NavState == NavState.OPEN))
     {
-        path = "/" + page1.PageName;
+        path = "/" + page1.UrlName;
         <li>
-            <a href="@page1.PageName">@page1.Menuname</a>
+            <a href="@path">@page1.Menuname</a>
             @if (page1.Children != null)
             {
                 <ul>
-                    @foreach (var page2 in page1.Children)
+                    @foreach (var page2 in page1.Children.Where(x => x.NavState == NavState.OPEN))
                     {
-                        path = "/" + page1.PageName + "/" + page2.PageName;
+                        path = "/" + page1.UrlName + "/" + page2.UrlName;
                         <li>
                             <a href="@path">@page2.Menuname</a>
                             @if (page2.Children != null)
                             {
                                 <ul>
-                                    @foreach (var page3 in page2.Children)
+                                    @foreach (var page3 in page2.Children.Where(x => x.NavState == NavState.OPEN))
                                     {
-                                        path = "/" + page1.PageName + "/" + page2.PageName + "/" + page3.PageName;
+                                        path = "/" + page1.UrlName + "/" + page2.UrlName + "/" + page3.UrlName;
                                         <li>
                                             <a href="@path">@page3.Menuname</a>
                                         </li>

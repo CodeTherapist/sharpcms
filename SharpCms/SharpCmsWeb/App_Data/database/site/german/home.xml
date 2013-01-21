@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Start</pagename>
+    <name>home</name>
+    <menuname>Start</menuname>
+    <pageidentifier>german/home</pageidentifier>
+    <status>open</status>
+    <lastedited>jig</lastedited>
+    <metadescription>Übersicht über unsere Dienstleistungen</metadescription>
+    <metakeywords>cms, content management, redaktionssystem, webdesign, webentwicklung</metakeywords>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;h1&gt;Software-Entwicklung mit GUTSCH-ONLINE Software&amp;nbsp;&lt;/h1&gt;&lt;p&gt;Wir unterst&amp;uuml;tzen Sie umfangreich bei der Entwicklung Ihrer Softwareprojekte.&lt;/p&gt;&lt;h2&gt;Entwicklung&lt;/h2&gt;&lt;p&gt;Mit unseren Kompetenzen k&amp;ouml;nnen wir Sie direkt bei der Umsetzung Ihrer Projekte unterst&amp;uuml;tzen. Wenn Ihnen Ressourcen fehlen und/ oder&amp;nbsp;wenn Ihnen Zeit fehlt, stehen wir Ihnen zur Verf&amp;uuml;gung.&lt;/p&gt;&lt;p&gt;&lt;a href="show/german/development.aspx"&gt;Weiter lesen...&lt;/a&gt;&lt;a href="show/german/service.aspx"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;Beratung&lt;/h2&gt;&lt;p&gt;Unser Wissen und unsere Erfahrungen helfen Ihnen, Ihr Softwareprojekt besser und effektiver zu gestalten.&lt;/p&gt;&lt;p&gt;&lt;a href="show/german/consulting.aspx"&gt;Weiter lesen...&lt;/a&gt;&lt;a href="show/german/service.aspx"&gt;&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;Schulung &lt;/h2&gt;&lt;p&gt;Ihnen fehlt Knowhow? Ben&amp;ouml;tigen Sie schnell kompetente Unterst&amp;uuml;tzung, Tipps und Erfahrungen? Gerne geben wir Schulungen&amp;nbsp;zu vielen Bereichen der Software-Entwicklung.&lt;/p&gt;&lt;p&gt;&lt;a href="show/german/learning.aspx"&gt;Weiter lesen...&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+    <container name="content2">
+      <elements>
+        <element type="paragraph">
+          <text>&lt;h3&gt;See# Party 2011&lt;/h3&gt;&lt;p&gt;GUTSCH-ONLINE Software ist offizieller Sponsor der See# Party 2011: &lt;a href="http://www.seesharpparty.de/de/Sponsoren/Silber-Sponsoren/page38926.htm"&gt;siehe&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Das Team</pagename>
+    <name>das_team</name>
+    <menuname>Das Team</menuname>
+    <pageidentifier>german/about/das_team</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <metakeywords></metakeywords>
+    <metadescription>Lernen Sie das Team kennen</metadescription>
+    <lastedited></lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="paragraph">
+          <text>&lt;h1&gt;Das Team hinter GUTSCH-ONLINE Software GmbH&lt;/h1&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h2&gt;J&amp;uuml;rgen Gutsch&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&amp;quot;Die Entwicklung von Software ist auch ein kreatives Handwerk.&amp;quot;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Senior Software Developer, Gesch&amp;auml;ftsf&amp;uuml;hrer, Gesellschafter&lt;/em&gt;&lt;/p&gt;&lt;p&gt;J&amp;uuml;rgen entwickelt seit &amp;uuml;ber 10 Jahren Software und kennt das .NET-Framework&amp;nbsp;seit der ersten Version. Er konnte in den 10 Jahren seine Erfahrung in drei erfolgreichen Unternehmen als Entwickler, Projektleiter, Teamleiter und Entwicklungsleiter sammeln. Sowohl Entwicklerschulungen, als auch die Planung und implementation der n&amp;ouml;tigen Infrastruktur zur Software-Entwicklung geh&amp;ouml;rten zu seinem Aufgabengebieten.&lt;/p&gt;&lt;h2&gt;Roberto Danti&lt;/h2&gt;&lt;p&gt;&lt;em&gt;&amp;ldquo;Software Entwicklung erlaubt Ideen und Visionen zu verwirklichen.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Senior Software Developer&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Roberto bringt &amp;uuml;ber 10 Jahre Berufserfahrung als Software-Entwickler mit. Seit 1999 entwickelte Roberto, BI-L&amp;ouml;sungen mit VB6, Excel VBA und Applix TM1, seit ca. Fr&amp;uuml;hjahr 2006 arbeitet er erfolgreich mit VB.NET, C# und MS SQL-Server. &lt;br /&gt;Neben vielen kleineren Software-Programmen in Kundenprojekten, hat Roberto einige gro&amp;szlig;e Projekte erfolgreich von der Konzeption &amp;uuml;ber die Implementierung, bis zu den Tests entwickelt.&lt;br /&gt;Seine Leidenschaft ist zwar ASP.NET, aber er f&amp;uuml;hlt sich in anderen .NET Bereiche genauso zu Hause.&lt;/p&gt;&lt;h2&gt;Florian Geisenhof&lt;/h2&gt;&lt;p&gt;&amp;quot;&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Senior Software Developer&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h2&gt;Patrick Kress&lt;/h2&gt;&lt;p&gt;&amp;quot;&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Office Management&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Patrick unterst&amp;uuml;tzt das Team mit allem was au&amp;szlig;erhalb der Entwicklung ansteht und sorgt daf&amp;uuml;r, dass der Laden l&amp;auml;uft.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+    <container name="content2">
+      <elements>
+        <element type="paragraph">
+          <text>&lt;p align="center"&gt;&lt;img src="download/Files/Pictures/gutschonline.jpg.aspx?width=100" width="100" height="136" /&gt;&lt;/p&gt;&lt;p align="center"&gt;&amp;nbsp;&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="download/Files/Pictures/Bild.jpg.aspx?width=100" width="100" height="153" /&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;br /&gt;&amp;nbsp;&lt;/p&gt;&lt;p align="center"&gt;&lt;img src="download/Files/Pictures/BW_online.JPG.aspx?width=100" width="100" height="139" /&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

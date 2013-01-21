@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>asp</pagename>
+    <name>asp</name>
+    <menuname>asp</menuname>
+    <pageidentifier>german/tutorials/asp</pageidentifier>
+    <status>open</status>
+    <lastedited>07.12.2006</lastedited>
+    <metadescription>asp tutorials</metadescription>
+    <metakeywords>activex, dll, context</metakeywords>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>ASP Tutorials</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>2 lines</offset>
+        </element>
+        <element type="intlink">
+          <sufixtext>20.04.2003</sufixtext>
+          <linktext>Erstellen einer ActiveX-DLL und ansprechen in ASP</linktext>
+          <link>german/tutorials/vb6/erstellen_einer_activex-dll_und_ansprechen_in_asp</link>
+          <prefixtext></prefixtext>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

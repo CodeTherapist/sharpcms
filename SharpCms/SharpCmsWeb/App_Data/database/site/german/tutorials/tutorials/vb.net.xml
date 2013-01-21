@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>VB.NET</pagename>
+    <name>vb.net</name>
+    <menuname>VB.NET</menuname>
+    <pageidentifier>german/tutorials/tutorials/vb.net</pageidentifier>
+    <status>open</status>
+    <lastedited>22.07.2008</lastedited>
+    <metakeywords>VB.NET, Tutorials, beschreibungen, beispiele</metakeywords>
+    <metadescription>VB.NET Tutorials</metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>VB.NET</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="overview">
+          <text></text>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

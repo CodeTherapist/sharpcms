@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>.NET Stammtisch Konstanz-Kreuzlingen</pagename>
+    <name>net_stammtisch_konstanz-kreuzlingen</name>
+    <menuname>.NET Stammtisch Konstanz-Kreuzlingen</menuname>
+    <pageidentifier>german/development/products/laufendeprojekte/net_stammtisch_konstanz-kreuzlingen</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <metakeywords>.NET Usergroup, commuity</metakeywords>
+    <metadescription>.NET Usergroup für die Region Konstanz und Kreuzlingen</metadescription>
+    <lastedited>jg</lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>.NET Stammtisch Konstanz-Kreuzlingen</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;p&gt;GUTSCH-ONLINE ist offizieller Sponsor und Mitveranstalter des .NET Stammtisch Konstanz-Kreuzlingen. Wir stellen sowohl die Community Website als auch die Domains zur Verf&amp;uuml;gung.&lt;/p&gt;&lt;p&gt;&amp;quot;Der Stammtisch Konstanz-Kreuzlingen wurde ins Leben gerufen, da es beidseitig der Grenze in der n&amp;auml;heren Umgebung keine Veranstaltung rund um Microsofts .NET gibt. Der Stammtisch soll in erster Linie eine formlose Diskussionsm&amp;ouml;glichkeit f&amp;uuml;r alle Interessierten bieten, denen der Weg nach Konstanz und Kreuzlingen nicht zu weit ist.&amp;quot;&lt;/p&gt;&lt;p&gt;Mehr zum .NET Stammtisch gibt es auf &lt;a href="http://www.dotnetkk.de/"&gt;http://www.dotnetkk.de/&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture>Files/Pictures/logo.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

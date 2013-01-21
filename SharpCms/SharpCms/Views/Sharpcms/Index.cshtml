@@ -1,0 +1,45 @@
+﻿@using SharpCms.Code
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>sharpcms</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/Shell.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script>
+        function navigateTo(url) {
+            //   $('#content').attr('src', url);
+            window.frames["content"].location.href = url;
+        }
+        function navigateInNavigation(url) {
+            window.frames["navigation"].location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <div id="workingarea">
+        <div>
+            <div id="logo">
+                <a href="javascript:navigateTo('@Html.ActionUrl("DashBoard", "Mandator")');">
+                    <img src="../../Content/newlogocp.png" alt="" height="30" width="120" /></a>
+            </div>
+            <div id="toparea">
+                <div id="menu"></div>
+            </div>
+        </div>
+        <div class="secondrow">
+            <div id="navigationarea">
+                <iframe name="navigation" src="@Html.ActionUrl("Navigation", "Mandator")"></iframe>
+            </div>
+            <div id="contentarea">
+                <iframe name="content" src="@Html.ActionUrl("DashBoard", "Mandator")"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

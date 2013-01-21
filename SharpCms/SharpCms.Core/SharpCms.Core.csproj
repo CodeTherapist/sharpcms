@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataObjects\GroupInfo.cs" />
-    <Compile Include="DataObjects\Containers.cs" />
+    <Compile Include="DataObjects\Container.cs" />
     <Compile Include="DataObjects\Element.cs" />
     <Compile Include="DataObjects\NavState.cs" />
     <Compile Include="DataObjects\Page.cs" />
@@ -52,6 +52,8 @@
     <Compile Include="DataObjects\UserInfo.cs" />
     <Compile Include="DataObjects\ViewState.cs" />
     <Compile Include="Data\TempData.cs" />
+    <Compile Include="IEnumerableExtensions.cs" />
+    <Compile Include="MvcHelper.cs" />
     <Compile Include="PageController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

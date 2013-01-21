@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Training</pagename>
+    <name>training</name>
+    <menuname>Training &amp; Schulung</menuname>
+    <pageidentifier>german/leistungen/training</pageidentifier>
+    <status>hide</status>
+    <template></template>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+    <lastedited></lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements />
+    </container>
+  </containers>
+</page>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Blogs</pagename>
+    <name>blogs</name>
+    <menuname>Blogs</menuname>
+    <pageidentifier>german/tutorials/blogs</pageidentifier>
+    <status>hide</status>
+    <lastedited>02.08.2008</lastedited>
+    <metakeywords>blog, weblog, feed, news feed</metakeywords>
+    <metadescription>Meine Blogs</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Meine Blogs</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Mein Blog auf ASP.NET Zone &amp;uuml;ber ASP.NET und mehr...&lt;/h2&gt;&lt;p&gt;In diesem Blog geht es um alles rund um ASP.NET, .NET und Webentwicklung. Hin und wieder schreibe ich auch um Accessibility, Usabillity und Webstandards allgemein.&lt;/p&gt;&lt;p&gt;&lt;a href="http://feeds.feedburner.com/jgutsch"&gt;&lt;img src="default.aspx?process=download/files/pictures/rss.png" width="16" height="16" /&gt;Newsfeed&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/default.aspx"&gt;ASP.NET und mehr&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Mein Privater Blog &amp;uuml;ber dies und das und vor allem jenes...&lt;/h2&gt;&lt;p&gt;In diesem Blog schreibe ich &amp;uuml;ber alles, was mir gerade in den Sinn kommt. Haupts&amp;auml;chlich geht es jedoch um Dinge die ich in den Weiten des Netzes finde.&lt;/p&gt;&lt;p&gt;&lt;a href="http://feeds.feedburner.com/juergensblog"&gt;&lt;img src="default.aspx?process=download/files/pictures/rss.png" width="16" height="16" /&gt;Newsfeed&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://juergen.gutsch-online.de/"&gt;Dies und das und vor allem jenes...&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

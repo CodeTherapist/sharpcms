@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Dateiupload in ein Verzeichnis</pagename>
+    <name>dateiupload_in_ein_verzeichnis</name>
+    <menuname>Dateiupload_FS</menuname>
+    <pageidentifier>german/tutorials/tutorials/asp.net/dateiupload_in_ein_verzeichnis</pageidentifier>
+    <status>open</status>
+    <lastedited>19.12.2003</lastedited>
+    <metadescription>Einfacher Mehrfachupload von Dateien in ein bestimmtes Verzeichnis auf dem Server</metadescription>
+    <metakeywords>Upload, asp.net, vb.net, System.Web.UI.HtmlControls.HtmlInputFile, System.Web.HttpFileCollection, Request.Files</metakeywords>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Dateiupload in ein Verzeichnis</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>2 lines</offset>
+        </element>
+        <element type="freetext">
+          <text>&lt;p&gt;Autor: Jürgen Gutsch&lt;/p&gt;
+&lt;p&gt;Version: 1.0&lt;/p&gt;
+&lt;p&gt;Sprache: vb.net&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Benötigt wird:&lt;/p&gt;
+&lt;p&gt;.net Framework ab v1.x.xxxx&lt;/p&gt;
+&lt;p&gt;VisualStudio.net&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Getestet auf winXP-Professional (IIS 5.1)&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2&gt;Dateiupload in ein Verzeichnis&lt;/h2&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Was früher mit ASP, ohne Komponenten oder aufwendigen Scripts nicht möglich war, ist heute mit .net kein Problem mehr. Dateien, die über ein Html-Formular an den Server gesendet werden, können direkt aus dem Http-Haeder ausgelesen und weiterverarbeitet werden. Dieses Tutorial zeigt eine uploadroutine für mehrere Dateien (die allerdings auch problemlos mit einem Formularfeld vom Typ "file" functioniert).&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3&gt;Das Formular&lt;/h3&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Legen wir als erstes eine aspx-Seite "&lt;i&gt;upload.aspx&lt;/i&gt;" im VisualStudio an.&lt;/p&gt;
+&lt;p&gt;Sie sollte in etwa so aussehen:&lt;/p&gt;
+&lt;pre&gt;&amp;lt;%@ Page Language="vb" AutoEventWireup="false" 
+    Codebehind="upload.aspx.vb" Inherits="tutorials.upload"%&amp;gt;
+&amp;lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;title&amp;gt;WebForm1&amp;lt;/title&amp;gt;
+&amp;lt;meta name="GENERATOR" content="Microsoft Visual Studio.NET 7.0"&amp;gt;
+&amp;lt;meta name="CODE_LANGUAGE" content="Visual Basic 7.0"&amp;gt;
+&amp;lt;meta name="vs_defaultClientScript" content="JavaScript"&amp;gt;
+&amp;lt;meta name="vs_targetSchema" 
+            content="http://schemas.microsoft.com/intellisense/ie5"&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;form id="Form1" method="post" runat="server"&amp;gt;&amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;&lt;br&gt;&amp;lt;/html&amp;gt;&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Das Form-Tag ergänzen wir um ein Attribut:&lt;/p&gt;
+&lt;pre&gt;enctype="multipart/form-data"&lt;/pre&gt;
+&lt;p&gt; Um auch Binärdaten zu senden.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Zwischen die Form-Tags setzen wir die benötigten Steuerelemente, so dass die aspx-Seite jetzt etwa so aussieht:&lt;/p&gt;
+&lt;pre&gt;&amp;lt;%@ Page Language="vb" AutoEventWireup="false" 
+    Codebehind="upload.aspx.vb" Inherits="tutorials.upload"%&amp;gt;
+&amp;lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;title&amp;gt;WebForm1&amp;lt;/title&amp;gt;
+&amp;lt;meta name="GENERATOR" content="Microsoft Visual Studio.NET 7.0"&amp;gt;
+&amp;lt;meta name="CODE_LANGUAGE" content="Visual Basic 7.0"&amp;gt;
+&amp;lt;meta name="vs_defaultClientScript" content="JavaScript"&amp;gt;
+&amp;lt;meta name="vs_targetSchema" 
+            content="http://schemas.microsoft.com/intellisense/ie5"&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;form id="Form1" method="post" runat="server" 
+            enctype="multipart/form-data"&amp;gt;
+&amp;lt;input type="file" name="file1" id="file1" runat="server" /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;input type="file" name="file2" id="file2" runat="server" /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;input type="file" name="file3" id="file3" runat="server" /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;input type="file" name="file4" id="file4" runat="server" /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;input type="file" name="file5" id="file5" runat="server" /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;input type="file" name="file6" id="file6" runat="server" /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;input type="submit" name="send" id="send" 
+            runat="server" value="submit" /&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;asp:label id="Label1" runat="server"&amp;gt;&amp;lt;/asp:label&amp;gt;
+&amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Damit währe unser Testformular vollständig.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3&gt;Die Codebehind-Klasse&lt;/h3&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Um in die Codeansicht zu wechseln, klicken wir mit der rechten Maustaste in auf die aspx-Seite und wählen "Code anzeigen".&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Folgender Code sollte vom VisualStudio angelegt worden sein:&lt;/p&gt;
+&lt;pre&gt;&lt;span style="color:#0000FF"&gt;Public Class&lt;/span&gt; upload
+    &lt;span style="color:#0000FF"&gt;Inherits&lt;/span&gt; System.Web.UI.Page
+    &lt;span style="color:#0000FF"&gt;Protected WithEvents&lt;/span&gt; file1 &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; _
+                System.Web.UI.HtmlControls.HtmlInputFile
+    &lt;span style="color:#0000FF"&gt;Protected WithEvents&lt;/span&gt; file2 &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; _ 
+                System.Web.UI.HtmlControls.HtmlInputFile
+    &lt;span style="color:#0000FF"&gt;Protected WithEvents&lt;/span&gt; file3 &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; _
+                System.Web.UI.HtmlControls.HtmlInputFile
+    &lt;span style="color:#0000FF"&gt;Protected WithEvents&lt;/span&gt; file4 &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; _
+                System.Web.UI.HtmlControls.HtmlInputFile
+    &lt;span style="color:#0000FF"&gt;Protected WithEvents&lt;/span&gt; file5 &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; _
+                System.Web.UI.HtmlControls.HtmlInputFile
+    &lt;span style="color:#0000FF"&gt;Protected WithEvents&lt;/span&gt; file6 &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; _
+                System.Web.UI.HtmlControls.HtmlInputFile
+    &lt;span style="color:#0000FF"&gt;Protected WithEvents&lt;/span&gt; Label1 &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; _
+                ystem.Web.UI.WebControls.Label
+    &lt;span style="color:#0000FF"&gt;Protected WithEvents&lt;/span&gt; send &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; _
+                System.Web.UI.HtmlControls.HtmlInputButton
+	
+    #&lt;span style="color:#0000FF"&gt;Region&lt;/span&gt; " Web Form Designer Generated Code "
+
+        'This call is required by the Web Form Designer.
+        &amp;lt;System.Diagnostics.DebuggerStepThrough()&amp;gt; _
+        &lt;span style="color:#0000FF"&gt;Private Sub&lt;/span&gt; InitializeComponent()
+
+        &lt;span style="color:#0000FF"&gt;End Sub&lt;/span&gt;
+
+        &lt;span style="color:#0000FF"&gt;Private Sub&lt;/span&gt; Page_Init(&lt;span style="color:#0000FF"&gt;ByVal&lt;/span&gt; sender &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; System.Object, _
+                &lt;span style="color:#0000FF"&gt;ByVal&lt;/span&gt; e &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; System.EventArgs) &lt;span style="color:#0000FF"&gt;Handles MyBase&lt;/span&gt;.Init
+            'CODEGEN: This method call is required 
+            'by the Web Form Designer
+            'Do not modify it using the code editor.
+            InitializeComponent()
+        &lt;span style="color:#0000FF"&gt;End Sub&lt;/span&gt;
+
+    #&lt;span style="color:#0000FF"&gt;End Region&lt;/span&gt;
+
+    &lt;span style="color:#0000FF"&gt;Private Sub&lt;/span&gt; Page_Load(&lt;span style="color:#0000FF"&gt;ByVal&lt;/span&gt; sender &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; System.Object, _
+            &lt;span style="color:#0000FF"&gt;ByVal&lt;/span&gt; e &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; System.EventArgs) &lt;span style="color:#0000FF"&gt;Handles MyBase&lt;/span&gt;.Load
+        'Put user code to initialize the page here
+
+    &lt;span style="color:#0000FF"&gt;End Sub&lt;/span&gt;
+
+&lt;span style="color:#0000FF"&gt;End Class&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Fügen wir dem oben stehenden Code nun die Prozedur hinzu, die den Uploadübernimmt:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;			
+&lt;pre&gt;
+[...]
+&lt;span style="color:#0000FF"&gt;Private Sub&lt;/span&gt; saveInFolder()
+
+&lt;span style="color:#0000FF"&gt;End Sub&lt;/span&gt;
+[...]
+&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Alles weitere geschieht jetzt innerhalb dieser Sub&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;So auch die nächste Zeile: &lt;/p&gt;
+&lt;p&gt;Hier Deklarieren wir eine Variable (FileCollection) vom Typ &lt;b&gt;System.Web.HttpFileCollection&lt;/b&gt;, welche alle &amp;Uuml;bertragenen Dateien empfängt (Request.Files):&lt;/p&gt;
+&lt;pre&gt;&lt;span style="color:#0000FF"&gt;Dim&lt;/span&gt; FileCollection &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; System.Web.HttpFileCollection = &lt;b&gt;Request&lt;/b&gt;.Files
+&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;als nächstes benötigen wir noch einige Variablen:&lt;/p&gt;
+&lt;pre&gt;
+&lt;span style="color:#0000FF"&gt;Dim&lt;/span&gt; i &lt;span style="color:#0000FF"&gt;As Integer&lt;/span&gt; &lt;span style="color:#006600"&gt;' ein Counter&lt;/span&gt;
+
+&lt;span style="color:#0000FF"&gt;Dim&lt;/span&gt; ContentLength &lt;span style="color:#0000FF"&gt;As Long&lt;/span&gt; &lt;span style="color:#006600"&gt;' speichert die Dateigröße&lt;/span&gt;
+&lt;span style="color:#0000FF"&gt;Dim&lt;/span&gt; FileName &lt;span style="color:#0000FF"&gt;As String&lt;/span&gt; &lt;span style="color:#006600"&gt;' speichert den Dateinamen&lt;/span&gt;
+&lt;span style="color:#0000FF"&gt;Dim&lt;/span&gt; IOStream &lt;span style="color:#0000FF"&gt;As&lt;/span&gt; System.IO.Stream &lt;span style="color:#006600"&gt;' empfängt die Datei&lt;/span&gt;
+
+&lt;span style="color:#0000FF"&gt;Dim&lt;/span&gt; Counter &lt;span style="color:#0000FF"&gt;As Integer&lt;/span&gt; &lt;span style="color:#006600"&gt;' Zählt die Dateien&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;es folgt die Schleife, um alle dateien in der FileCollection auszulesen, sowie das Auslesen der Dateieigenschaften ContentLength und Filename:&lt;/p&gt;
+&lt;pre&gt;&lt;span style="color:#0000FF"&gt;For&lt;/span&gt; i = 0 &lt;span style="color:#0000FF"&gt;To&lt;/span&gt; FileCollection.Count - 1
+    IOStream = FileCollection(i).InputStream
+    ContentLength = FileCollection(i).ContentLength
+    FileName = System.IO.Path.GetFileName(FileCollection(i).FileName)&lt;/pre&gt;
+&lt;p&gt;Man sollte hierbei mal einen Blick auf die Function GetFileName im Namespace System.IO.Path werfen, die einen aus enem beliebigen Pfad den Dateinamen ermittelt. Der Namespace System.IO.Path bietet noch viele weitere Functionen im Bereich Pfade und URLs.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Nun wird ein Array vom Typ Byte deklariert ("&lt;i&gt;FileContent&lt;/i&gt;&lt;p&gt;&lt;i&gt;IOStream.Read&lt;/i&gt; ließt uns anschließend die Daten in das übergebene Array, der zweite Parameter enthält, ab welcher Position des Arrays die Daten eingefügt werden sollen und der Dritte, die Länge der Daten:&lt;/p&gt;
+ zweite Parameter enthält, ab welcher Position des Arrays die Daten eingefügt werden sollen und der Dritte, die Länge der Daten:&lt;/p&gt;
+&lt;pre&gt;&lt;span style="color:#0000FF"&gt;Dim&lt;/span&gt; fs &lt;span style="color:#0000FF"&gt;As &lt;/span&gt;System.IO.FileStream
+
+&lt;span style="color:#0000FF"&gt;Dim&lt;/span&gt; FileContent(ContentLength) &lt;span style="color:#0000FF"&gt;As Byte&lt;/span&gt; 
+&lt;span style="color:#0000FF"&gt;Dim&lt;/span&gt; status &lt;span style="color:#0000FF"&gt;As Integer&lt;/span&gt;
+
+&lt;span style="color:#006600"&gt;' Datei ins ByteArray schreiben, geschriebene Daten erhalten&lt;/span&gt;:
+status = IOStream.Read(FileContent, 0, ContentLength)&lt;/pre&gt;
+&lt;p&gt;Die &lt;i&gt;Funktion Read()&lt;/i&gt; gibt uns die Länge des Streams wieder, wenn also nichts empfangen wurde, erhalten wir 0, was uns hilft die weitere Verarbeitung zu überspringen, um fehler zu vermeiden, falls keine Dat&lt;p&gt;Wenn also eine Datei im &lt;i&gt;Stream&lt;/i&gt; enthalten ist, ist der Status auf jeden Fall größer als 0 und wir können mit der Verarbeitung fortfahren und unseren Dateienzähler "Counter"; um eins erhöhen.&lt;/p&gt;
+ist der Status auf jeden Fall größer als 0 und wir können mit der Verarbeitung fortfahren und unseren Dateienzähler "Counter"; um eins erhöhen.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;   
+&lt;p&gt;Jetzt können wir die Daten die in unserem ByteArray enthalten sind in unser verzeichnis schreiben:&lt;/p&gt;
+&lt;pre&gt;&lt;span style="color:#006600"&gt;' Datei erzeugen&lt;/span&gt;
+fs = System.IO.File.Create(Server.MapPath("files/") &amp; FileName, _
+        ContentLength)
+&lt;span style="color:#006600"&gt;' Daten in Datei schreiben, wenn möglich&lt;/span&gt;
+&lt;span style="color:#0000FF"&gt;If&lt;/span&gt; fs.CanWrite &lt;span style="color:#0000FF"&gt;Then&lt;/span&gt; fs.Write(FileContent, 0, ContentLength)
+&lt;span style="color:#006600"&gt;' Schreibe-Puffer leeren&lt;/span&gt;
+fs.Flush()
+&lt;span style="color:#006600"&gt;' FileStream zerstören&lt;/span&gt;
+fs.Close()&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

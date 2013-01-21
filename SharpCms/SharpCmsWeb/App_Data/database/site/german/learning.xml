@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Schulung</pagename>
+    <name>learning</name>
+    <menuname>Schulung</menuname>
+    <pageidentifier>german/learning</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <metakeywords>Learning, Training, Schulungen, Seminare</metakeywords>
+    <metadescription>Schulungen und Seminare</metadescription>
+    <lastedited></lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="paragraph">
+          <text>&lt;h1&gt;Der Wert von Wissen und Erfahrung&lt;/h1&gt;&lt;p&gt;Wissen und Erfahrung sind nur etwas wert, wenn&amp;nbsp;sie eingesetzt und genutzt&amp;nbsp;werden. Wissen und Erfahrung wird &amp;ouml;fter eingesetzt und genutzt, je weiter es verbreitet wird. Mit dieser Philosophie im Hinterkopf, m&amp;ouml;chten wir unser Wissen und unsere Erfahrung mit Ihnen teilen.&lt;/p&gt;&lt;p&gt;Damit Sie davon profitieren, bieten wir Ihnen individuelle Schulungen und Seminare an. Sie alleine bestimmen wie und was sie lernen m&amp;ouml;chten. Sagen Sie uns was Sie ben&amp;ouml;tigen.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

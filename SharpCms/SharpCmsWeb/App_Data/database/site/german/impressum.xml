@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Impressum</pagename>
+    <name>impressum</name>
+    <menuname>Impressum</menuname>
+    <pageidentifier>german/impressum</pageidentifier>
+    <status>hide</status>
+    <lastedited>18.12.2007</lastedited>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Impressum</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Kontakt:&amp;nbsp;&lt;/h2&gt;&lt;p&gt;GUTSCH-ONLINE Software GmbH&lt;br /&gt;Am Bahndamm 3&lt;br /&gt;78234 Engen&lt;/p&gt;&lt;p&gt;Tel: +49 7733 50570 0&lt;/p&gt;&lt;p&gt;Email: &lt;a href="mailto:info@gutsch-online.de"&gt;info@gutsch-online.de&lt;/a&gt;&lt;br /&gt;Web: &lt;a href="/" target="_blank"&gt;www.gutsch-online.de&lt;/a&gt;&lt;/p&gt;&lt;p&gt;USt-IdNr: DE280100130&amp;nbsp;&lt;/p&gt;&lt;p&gt;Die Gesellschaft wird vertreten durch den Gesch&amp;auml;ftsf&amp;uuml;hrer J&amp;uuml;rgen Gutsch und ist eingetragen am Amtsgericht Freiburg, im Handelsregister B, HRB 707432. &lt;/p&gt;&lt;p&gt;Inhaltlich Verantwortlicher gem&amp;auml;&amp;szlig; &amp;sect; 6 MDStV: J&amp;uuml;rgen Gutsch&lt;br /&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Website:&lt;/h2&gt;&lt;p&gt;Als CMS dient das Open source Content Management System &lt;br /&gt;Sharpcms.net (&lt;a href="http://www.sharpcms.org/"&gt;http://www.sharpcms.org/&lt;/a&gt;)&lt;/p&gt;&lt;p&gt;Das CSS Layout basiert auf das YAML Framework 3.0&amp;nbsp;(&lt;a href="http://www.yaml.de/"&gt;http://www.yaml.de/&lt;/a&gt;) &lt;br /&gt;von Dirk Jesse (&lt;a href="http://highresolution.info/"&gt;http://highresolution.info/&lt;/a&gt;)&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Haftung:&lt;/h2&gt;&lt;h3&gt;Haftung f&amp;uuml;r Inhalte &lt;/h3&gt;&lt;p&gt;Die Inhalte unserer Seiten wurden mit gr&amp;ouml;&amp;szlig;ter Sorgfalt erstellt. F&amp;uuml;r die Richtigkeit, Vollst&amp;auml;ndigkeit und Aktualit&amp;auml;t der Inhalte k&amp;ouml;nnen wir jedoch keine Gew&amp;auml;hr &amp;uuml;bernehmen.&lt;/p&gt;&lt;p&gt;Als Dienstanbieter sind wir gem&amp;auml;&amp;szlig; &amp;sect; 7 Abs.1 TMG f&amp;uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &amp;sect;&amp;sect; 8 bis 10 TMG sind wir als Dienstanbieter jedoch nicht verpflichtet, &amp;uuml;bermittelte oder gespeicherte fremde Informationen zu &amp;uuml;berwachen oder nach Umst&amp;auml;nden zu forschen, die auf eine rechtswidrige T&amp;auml;tigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unber&amp;uuml;hrt. Eine diesbez&amp;uuml;gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung m&amp;ouml;glich. Bei bekannt werden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.&lt;/p&gt;&lt;h3&gt;Haftung f&amp;uuml;r Links &lt;/h3&gt;&lt;p&gt;Unser Angebot enth&amp;auml;lt Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb k&amp;ouml;nnen wir f&amp;uuml;r diese fremden Inhalte auch keine Gew&amp;auml;hr &amp;uuml;bernehmen. F&amp;uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&amp;ouml;gliche Rechtsverst&amp;ouml;&amp;szlig;e &amp;uuml;berpr&amp;uuml;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei bekannt werden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.&lt;/p&gt;&lt;h3&gt;Urheberrecht &lt;/h3&gt;&lt;p&gt;Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beitr&amp;auml;ge Dritter sind als solche gekennzeichnet. Die Vervielf&amp;auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&amp;szlig;erhalb der Grenzen des Urheberrechtes bed&amp;uuml;rfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&amp;uuml;r den privaten, nicht kommerziellen Gebrauch gestattet.&lt;/p&gt;&lt;p&gt;Die Betreiber der Seiten sind bem&amp;uuml;ht, stets die Urheberrechte anderer zu beachten bzw. auf selbst erstellte sowie lizenzfreie Werke zur&amp;uuml;ckzugreifen.&lt;/p&gt;&lt;h3&gt;Datenschutz &lt;/h3&gt;&lt;p&gt;Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies soweit m&amp;ouml;glich stets auf freiwilliger Basis. Die Nutzung der Angebote und Dienste ist, soweit m&amp;ouml;glich, stets ohne Angabe personenbezogener Daten m&amp;ouml;glich. &lt;/p&gt;&lt;p&gt;Wir weisen darauf hin, dass die Daten&amp;uuml;bertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitsl&amp;uuml;cken aufweisen kann. Ein l&amp;uuml;ckenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht m&amp;ouml;glich. &lt;/p&gt;&lt;p&gt;Der Nutzung von im Rahmen der Impressumspflicht ver&amp;ouml;ffentlichten Kontaktdaten durch Dritte zur &amp;Uuml;bersendung von nicht ausdr&amp;uuml;cklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdr&amp;uuml;cklich widersprochen. Die Betreiber der Seiten behalten sich ausdr&amp;uuml;cklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.&lt;/p&gt;&lt;h3&gt;Nutzung von Google Analytics&lt;/h3&gt;&lt;p&gt;Unsere Homepage benutzt Google Analytics, einen Webanalysedienst von Google. Google Analytics verwendet so genannte Cookies (kleine Textdateien), die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie erm&amp;ouml;glichen. Die durch die Cookie erzeugten Informationen &amp;uuml;ber Ihre Benutzung dieser Homepage (einschlie&amp;szlig;lich Ihrer IP-Adresse) werden an einen Server von Google in den USA &amp;uuml;bertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports &amp;uuml;ber die Websiteaktivit&amp;auml;ten f&amp;uuml;r die Homepage-Betreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte &amp;uuml;bertragen, sofern dieses gesetzlich vorgeschrieben ist oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten von Google in Verbindung bringen. Sie k&amp;ouml;nnen die Installation der Cookies durch eine entsprechende Einstellung in Ihrer Browser-Software verhindern, wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht s&amp;auml;mtliche Funktionen dieser Website in vollem Umfang nutzen k&amp;ouml;nnen. Durch die Nutzung unserer Homepage erkl&amp;auml;ren Sie sich mit der Bearbeitung, der &amp;uuml;ber Sie erhobenen Daten durch Google, in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Quelle:&lt;/b&gt; eRecht24.de - &lt;a href="http://www.e-recht24.de/" target="_blank"&gt;Rechtsberatung von Anwalt&lt;/a&gt; S&amp;ouml;ren Siebert&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

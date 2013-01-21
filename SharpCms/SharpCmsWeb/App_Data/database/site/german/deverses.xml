@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Deverses</pagename>
+    <name>deverses</name>
+    <menuname>Deverses</menuname>
+    <pageidentifier>german/deverses</pageidentifier>
+    <status>hide</status>
+    <lastedited></lastedited>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements />
+    </container>
+  </containers>
+</page>

@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Tree";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="sitetree">
+    <ul>
+        <li><span style="display:inline-block;">Home (DE)<br/>
+            Home (EN)</span>
+            <ul>
+                <li><span>News</span></li>
+                <li><span>Archive</span></li>
+            </ul>
+        </li>
+        <li><span>About Us</span>
+            <ul>
+                <li><span>Mission</span><ul>
+                    <li><span>Mission</span></li>
+                    <li><span>Jobs</span></li>
+                </ul>
+                </li>
+                <li><span>Jobs</span></li>
+            </ul>
+        </li>
+        <li><span>Products</span></li>
+        <li><span>Services</span></li>
+        <li><span>Contact Us</span></li>
+    </ul>
+</div>
+<script>
+    $(document).ready(function () {
+        $.jstree._themes = "/Content/themes/";
+        $("#sitetree").jstree({
+            "themes": {
+                "theme": "default",
+                "dots": false,
+                "icons": true
+            },
+            "plugins": ["themes", "html_data"]
+        });
+    });
+</script>

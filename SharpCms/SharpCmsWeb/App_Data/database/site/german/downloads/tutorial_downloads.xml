@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Tutorial Downloads</pagename>
+    <name>tutorial_downloads</name>
+    <menuname>Tutorial Downloads</menuname>
+    <pageidentifier>german/downloads/tutorial_downloads</pageidentifier>
+    <status>open</status>
+    <lastedited>07.12.2006</lastedited>
+    <metadescription>Downloads der Tutorials</metadescription>
+    <metakeywords>Downloads, tutorials</metakeywords>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Tutorial Downloads</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="header">
+          <text>asp.net Downloads:</text>
+          <headerstyle>Header2</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="header">
+          <text>TreeView erstellen mit MS IE Webcontrols (2)</text>
+          <headerstyle>Header3</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="intlink">
+          <sufixtext></sufixtext>
+          <linktext>zum Tutorial</linktext>
+          <link>german/tutorials/asp.net/treeview_erstellen_mit_ms_ie_webcontrols_2_</link>
+          <prefixtext></prefixtext>
+        </element>
+        <element type="download">
+          <document>Files/Documents/treeview02.zip</document>
+          <titletext>Download TreeView02.zip (106 KB)</titletext>
+          <text>TreeView02.zip</text>
+          <icon></icon>
+        </element>
+        <element type="header">
+          <text>TreeView erstellen mit MS IE Webcontrols</text>
+          <headerstyle>Header3</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="intlink">
+          <sufixtext></sufixtext>
+          <linktext>zum Zuzorial</linktext>
+          <link>german/tutorials/asp.net/treeview_erstellen_mit_ms_ie_webcontrols</link>
+          <prefixtext></prefixtext>
+        </element>
+        <element type="download">
+          <document>Files/Documents/treeview01.zip</document>
+          <titletext>Download TreeView01.zip (86 KB)</titletext>
+          <text>TreeView01.zip</text>
+          <icon></icon>
+        </element>
+        <element type="header">
+          <text>Dateiupload in eine Datenbank</text>
+          <headerstyle>Header3</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="intlink">
+          <sufixtext></sufixtext>
+          <linktext>zumTotorial</linktext>
+          <link>german/tutorials/asp.net/dateiupload_in_eine_datenbank</link>
+          <prefixtext></prefixtext>
+        </element>
+        <element type="download">
+          <document>Files/Documents/asp.net.fileupload.zip</document>
+          <titletext>Download asp.net.fileupload.zip (158 KB)</titletext>
+          <text>asp.net.fileupload.zip</text>
+          <icon></icon>
+        </element>
+        <element type="header">
+          <text>VB6 Downloads:</text>
+          <headerstyle>Header2</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="header">
+          <text>Erstellen einer ActiveX-DLL und ansprechen in ASP</text>
+          <headerstyle>Header3</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="intlink">
+          <sufixtext></sufixtext>
+          <linktext>zum Tutorial</linktext>
+          <link>german/tutorials/vb6/erstellen_einer_activex-dll_und_ansprechen_in_asp</link>
+          <prefixtext></prefixtext>
+        </element>
+        <element type="download">
+          <document>Files/Documents/aspdlltut.zip</document>
+          <titletext>Download aspdlltut.zip (9 KB)</titletext>
+          <text>aspdlltut.zip</text>
+          <icon></icon>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

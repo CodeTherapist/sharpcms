@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Laufende Projekte</pagename>
+    <name>laufendeprojekte</name>
+    <menuname>Laufende Projekte</menuname>
+    <pageidentifier>german/development/products/laufendeprojekte</pageidentifier>
+    <status>hide</status>
+    <template></template>
+    <metakeywords></metakeywords>
+    <metadescription>Laufende Projekte von GUTSCH-ONLINE</metadescription>
+    <lastedited>16.02.2009</lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Laufende Projekte von GUTSCH-ONLINE</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="overview">
+          <text>Laufende Projekte</text>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

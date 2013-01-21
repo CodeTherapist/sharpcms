@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Erstellen einer ActiveX-DLL und ansprechen in ASP</pagename>
+    <name>erstellen_einer_activex-dll_und_ansprechen_in_asp</name>
+    <menuname>ActiveXDLL_ASP</menuname>
+    <pageidentifier>german/tutorials/tutorials/vb6/erstellen_einer_activex-dll_und_ansprechen_in_asp</pageidentifier>
+    <status>open</status>
+    <lastedited>20.04.2003 </lastedited>
+    <metadescription>Dieses Tutorial beschreibt das Erstellen einer ActiveX-DLL mit Scripting Context und das ansprechen mit ASP</metadescription>
+    <metakeywords>ActiveX, DLL, ScriptingContext, asp</metakeywords>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Erstellen einer ActiveX-DLL und ansprechen in ASP</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>2 lines</offset>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;h2&gt;1. Voraussetzungen:&lt;/h2&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;IIS 5.x.&lt;/p&gt;&lt;p&gt;ASP.&lt;/p&gt;&lt;p&gt;VisualBasic 6.&lt;/p&gt;&lt;p&gt;Adminrechte auf dem Entwicklungsrechner.&lt;/p&gt;&lt;p&gt;einen Editor (z.B.: VisualInterDev, MS-ScriptEditor, Macromedia Dreamveaver-UltraDev, Macromedia DreamveaverMX, HomeSite).&lt;/p&gt;&lt;p&gt;Einen beliebigen Browser.&lt;/p&gt;&lt;p&gt;Lust am programmieren ;-)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h2&gt;2. Vorbereitungen&lt;/h2&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Richtet euch als erste einmal ein neues Verzeichnis ein, wo ist egal. Als Editor empfehle ich den Microsoft VisualInterDev (im VisualStudio6 enthalten), oder den MS-Skripteditor (in MS-Office enthalten, kann mit [shift]+[Alt]+[F11] von Frontpage aus aufgerufen werden). Die beiden Editoren sind meiner Meinung am besten geeignet um (eigene) DLLs in ASP einzubinden, da das sogenannte hilfreiche IntelliSense dann auch bei eigenen DLLs funktioniert.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h2&gt;3. VisualBasic 6&lt;/h2&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Startet nun VisualBasic 6 und w&amp;auml;hlt aus dem Startdialog die ActiveX-dll aus. Falls das Dialogfenster beim starten nicht aufpoppen sollte kann man es auch unter &amp;quot;Datei&amp;quot; - &amp;quot;Neu...&amp;quot; - &amp;quot;Projekt...&amp;quot; aufrufen. &lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_start.gif</picture>
+          <text>Startdialog</text>
+          <alttext>Startdialog</alttext>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Auf die Einzelheiten der Oberfl&amp;auml;che von VisualBasik 6 m&amp;ouml;chte ich nicht eingehen. Einige Fenster und Men&amp;uuml;s werde ich beschreiben, wenn sie hier im Tutorial benutzt werden.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Folgende wichtigen Elemente sind jetzt allerdings auf der Oberfl&amp;auml;che von VB 6 zu sehen:&lt;br /&gt;Links die Toolbar, welche getrost ausgeblendet werden kann, da wir sie nicht benutzen werden (was sollen Windows-Scrollbalken etc. in einer DLL, die f&amp;uuml;rs Internet gedacht ist? ;-) )&lt;br /&gt;In der Mitte ist das Codefenster zu sehen, hier werden wir den gr&amp;ouml;&amp;szlig;ten Teil der Arbeit erledigen.&lt;br /&gt;Rechts oben sollten wir den sogenannten Projektexplorer sehen (kann unter &amp;quot;Ansicht&amp;quot; in der Men&amp;uuml;leiste angezeigt werden), hier behalten wir den &amp;Uuml;berblick &amp;uuml;ber unsere Klassen und/oder &amp;ouml;ffnen sie zum bearbeiten.&lt;br /&gt;Darunter befindet sich das Eigenschaftsfenster (kann unter &amp;quot;Ansicht&amp;quot; in der Men&amp;uuml;leiste angezeigt werden), wo im Normalfall die Eigenschaften von Buttons, etc. bei Windowsanwendungen eingestellt werden. In unserem Fall werden hier nur die Eigenschaften unserer Klassen und des Projektes eingestellt.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h2&gt;4. Einstellungen&lt;/h2&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Fangen wir nun an unser neues Projekt so zu konfigurieren, wie wir es f&amp;uuml;r eine Serverkomponente f&amp;uuml;r ASP brauchen. Hierzu klicken wir im Projektexplorer auf das Projekt, so das es blau markiert ist:&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_proj1.gif</picture>
+          <alttext>Projektexplorer</alttext>
+          <text></text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Anschlie&amp;szlig;end schauen wir uns das Eigenschaftsfenster an, das sich etwas ver&amp;auml;ndert hat, als wir das Projekt markiert hatten. Eine Eigenschaft die wir hier &amp;auml;ndern k&amp;ouml;nnen ist der Projektname. Hier geben wir jetzt einen aussagekr&amp;auml;ftigen Namen, z.B. &amp;quot;meinProject&amp;quot; ;-). Den Namen sollten wir uns auf jeden fall merken, da wir ihn sp&amp;auml;ter ben&amp;ouml;tigen, um die fertige DLL von ASP aus anzusprechen. &lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_meinProject.gif</picture>
+          <alttext>meinProject</alttext>
+          <text></text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;&lt;br /&gt;Ist der neue Name eingegeben, so sollte sich der Projektexplorer folgenderma&amp;szlig;en darstellen: &lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_meinProj2.gif</picture>
+          <alttext>meinProject</alttext>
+          <text></text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Mit der Klasse sollten wir nun genauso vorgehen:&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_class1.gif</picture>
+          <alttext>Klasse</alttext>
+          <text></text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Das Eigenschaftsfenster sieht nun etwas anders aus, auch hier geben wir einen Namen ein, den wir uns merken sollten. Den Rest k&amp;ouml;nnen wir unbeachtet lassen.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_meineKlasse.gif</picture>
+          <alttext>meineKlasse</alttext>
+          <text></text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Das Ergebnis im Projektexplorer:&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_meineKlassecls.gif</picture>
+          <alttext>meineKlasse</alttext>
+          <text></text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Anschlie&amp;szlig;end k&amp;ouml;nnen wir wieder das Projekt markieren und auf speichern klicken, jetzt werden die f&amp;uuml;r das Projekt ben&amp;ouml;tigten Dateien mit den von uns vergebenen Namen gespeichert.&lt;/p&gt;&lt;p&gt;Das Codefenster sollte jetzt in der Titelleiste den Namen des Projekts und der aktuell ge&amp;ouml;ffneten Klasse haben:&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_newCodeFenster.gif</picture>
+          <alttext>Code Fenster</alttext>
+          <text>Nun folgt noch eine Einstellung und wir können anfangen zu Programmieren:Damit unsere DLL ASP kann, sollten wir noch die asp.dll in unser Projekt einbinden. Dazu klicken wir im Menü "Projekt“ auf "Verweise..."</text>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_projectVerweise.gif</picture>
+          <alttext>Projektverweise</alttext>
+          <text></text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;In dem sich &amp;ouml;ffnenden Fenster scrollen wir so lange nach unten bis wir auf den Eintrag &amp;quot;Microsoft Active Server Pages Object Library&amp;quot; sto&amp;szlig;en. (bei mir sind es zwei Eintr&amp;auml;ge, da die Entwicklungsumgebung scheinbar eine zweite asp.dll im Verzeichnis &amp;quot;Programme&amp;quot; registriert hat. In dem Fall w&amp;auml;hle ich die, welche sich im &amp;quot;system32&amp;quot;-Verzeichnis befindet (zu sehen an dem Pfad, der unten eingeblendet wird), da diese asp.dll in der Regel diejenige ist, die auch vom IIS (Webserver) verwendet wird). Die Eintr&amp;auml;ge bei euch sind nicht zwingend die gleichen wie bei mir, also nicht wundern, wenn die Liste bei euch etwas anders aussieht.&lt;br /&gt;Setzt nun einen Haken in das K&amp;auml;stchen vor dem Eintrag.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_MS-ASP-ObjectLibrary.gif</picture>
+          <alttext>ASP-ObjectLibrary</alttext>
+          <text></text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;So, das schlimmste h&amp;auml;tten wir...&lt;br /&gt;Jetzt kann die DLL das gleiche wie ASP. Fast...&lt;/p&gt;&lt;p&gt;Fast deswegen, weil die DLL noch keine Daten empfangen kann wie ASP, noch keine Daten direkt schreiben kann und noch nicht mit dem Server kommunizieren kann. auch kann die DLL noch nicht auf Sessions und Cookies zugreifen. Um das zu erreichen m&amp;uuml;ssen wir noch etwas programmieren...&lt;/p&gt;&lt;p&gt;F&amp;uuml;gt nun folgenden Code einfach mal so in das Codefenster:&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="code">
+          <text>[1] Option Explicit
+[2]
+[3] Private myScriptingContext As ScriptingContext
+[3] Private myRequest As Request
+[5] Private myResponse As Response
+[6] Private myApplication As Application
+[7] Private myServer As Server
+[8] Private mySession As Session
+[9]
+[10] Public Sub OnStartPage(PassedScriptingContext As ScriptingContext)
+[11] 	Set myScriptingContext = PassedScriptingContext
+[12] 	Set myApplication = myScriptingContext.Application
+[13] 	Set myRequest = myScriptingContext.Request
+[14] 	Set myResponse = myScriptingContext.Response
+[15] 	Set myServer = myScriptingContext.Server
+[16] 	Set mySession = myScriptingContext.Session
+[17] End Sub	</text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;(Die Zeilennummern sollten nicht kopiert werden, diese dienen hier nur der &amp;Uuml;bersicht, und erleichtern mir auch eventuelle Erkl&amp;auml;rungen)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Wer schon mit ASP zu tun hatte wird hier schon einige Objekte erkennen, wenn auch nicht in dieser Formulierung.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Zeile eins d&amp;uuml;rfte allerdings allen bekannt sein. &amp;quot;Option Explicit&amp;quot; legt fest, dass wir nun alle Variablen &amp;quot;explizit&amp;quot; deklarieren m&amp;uuml;ssen. Das dient einfach dazu, Fehler zu vermeiden.&lt;br /&gt;Anschlie&amp;szlig;end definieren wir die Objekte (Zeile 3 bis 8).&lt;br /&gt;Das Schl&amp;uuml;sselwort &amp;quot;Private&amp;quot; dient dazu, dass die Objekte von au&amp;szlig;en (von der ASP-Seite) nicht gelesen oder ge&amp;auml;ndert werden k&amp;ouml;nnen.&lt;br /&gt;Achtet darauf, dass die Objekte einen Namen bekommen der nicht zu einem Namenskonflikt f&amp;uuml;hrt (&amp;quot;Private Request as Request&amp;quot; k&amp;ouml;nnte evtl. einen Fehler verursachen, deshalb hab ich die Silbe &amp;quot;my&amp;quot; vorne dran geh&amp;auml;ngt)&lt;br /&gt;Das &amp;quot;ScriptingContext&amp;quot; ist ein Objekt, das alle ben&amp;ouml;tigten Objekte (Request, Response, Application, Server und Session) beinhaltet.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;In der Sub &amp;quot;OnStartPage&amp;quot; (die muss so genannt werden) wird der &amp;quot;ScriptingContext&amp;quot; dem oben definierten Objekten zugewiesen, so das damit gearbeitet werden kann.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Alle Funktionen, auf die von der ASP-Seite aus zugegriffen werden sollen, m&amp;uuml;ssen mit dem Schl&amp;uuml;sselwort &amp;quot;Public&amp;quot; deklariert werden.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Jetzt k&amp;ouml;nnen wir die DLL testen, indem wir drei kleine Funktionen hinzuf&amp;uuml;gen:&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="code">
+          <text>Public Function getMeText(ByVal text As String) As String
+	getMeText = UCase(text)
+End Function
+
+Public Sub writeMeText(ByVal text As String)
+	myResponse.Write (UCase(text))
+End Sub
+
+Public Sub writeMeTextFromUrl()
+	Dim text As String
+	text = myRequest.QueryString("text")
+	myResponse.Write (UCase(text))
+End Sub</text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Die erste Funktion gibt nur einen Text zur&amp;uuml;ck, der ihr vorher &amp;uuml;bergeben wurde, als kleine Spielerei lasse ich den Text in Gro&amp;szlig;buchstaben umwandeln.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Mit der zweiten Funktion teste ich das Responseobjekt &amp;quot;myResponse&amp;quot;. Diese Sub muss den Text, der ihr &amp;uuml;bergeben wurde, direkt auf der ASP-Seite ausgeben.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Die dritte Funktion muss einen Text &amp;uuml;ber den QueryString empfangen (myRequest.QueryString(&amp;quot;text&amp;quot;)) und ihn wie in der zweiten Funktion wieder ausgeben, nachdem er in Gro&amp;szlig;buchstaben umgewandelt wurde.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Um nun unsere DLL in Aktion zu sehen, m&amp;uuml;ssen wir sie erst kompilieren. Hierzu klicken wir im Men&amp;uuml; &amp;quot;Datei&amp;quot; auf &amp;quot;meinProject.dll erstellen...&amp;quot;, wobei hier &amp;quot;meinProject&amp;quot; f&amp;uuml;r den Namen des aktuellen Projekts steht. Falls das Projekt bisher noch nicht kompiliert wurde, wird die DLL nun sofort erstellt.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Normalerweise ist die DLL schon automatisch auf dem Rechner registriert auf dem sie entwickelt wurde, aber falls nicht, oder falls die DLL auf einem anderen Rechner zum Einsatz kommen soll muss sie dort erst registriert werden.&lt;br /&gt;Klickt hierf&amp;uuml;r im Windowsstartmen&amp;uuml; auf &amp;quot;Ausf&amp;uuml;hren...&amp;quot; und gebt in dem sich &amp;ouml;ffnendem Fenster &lt;br /&gt;regsvr32 D:\tuts\aspdlls\meinProject.dll&lt;br /&gt;ein (eventuell m&amp;uuml;sst ihr den Pfad zur &amp;quot;meinProject.dll&amp;quot; noch anpassen, je nach dem wo ihr das Projekt abgespeichert habt).&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_regsvr32.gif</picture>
+          <alttext>regsvr32</alttext>
+          <text>(mein System ist auf Englisch... )</text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Nachdem das erledigt ist, machen wir uns an die ASP-Seite:&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="code">
+          <text>&amp;lt;%
+set objDLL = server.CreateObject("meinProject.meineKlasse")
+response.Write objDLL.getMeText("Das ist ein Test")
+response.Write "&amp;lt;br /&amp;gt;"
+objDLL.writeMeText "Das ist ein Test"
+response.Write "&amp;lt;br /&amp;gt;"
+objDLL.writeMeTextFromUrl
+%&amp;gt;</text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Was passiert hier?&lt;br /&gt;Erst wird das Objekt erstellt, bzw. die DLL in die ASP-Seite eingebunden. Der Syntax hierf&amp;uuml;r lautet immer :&lt;br /&gt;set objektName = server.CreateObject(&amp;quot;ProjektName.KlassenName&amp;quot;)&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Anschlie&amp;szlig;end wird die erste Funktion aufgerufen und ihr ein Text &amp;uuml;bergeben.&lt;br /&gt;In der n&amp;auml;chsten Zeile geben wir einen &amp;lt;br&amp;gt;-Tag aus (wegen der &amp;Uuml;bersicht nachher)&lt;br /&gt;Anschlie&amp;szlig;end wird die zweite Funktion aufgerufen. Ihr wird ebenfalls ein Wert &amp;uuml;bergeben, aber da diese Funktion eine Sub ist, m&amp;uuml;ssen wir die Klammern weglassen.&lt;br /&gt;Dann wieder ein &amp;lt;br&amp;gt; und danach die dritte Funktion, diesmal ohne Parameter. weil die letzten beiden Funktionen den Wert direkt ausgeben sollen f&amp;auml;llt hier das &amp;quot;Response.Write&amp;quot; weg.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Starten wir nun die Seite (ich hab sie mal &amp;quot;dlltestseite.asp&amp;quot; genannt):&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_dlltestseite1.gif</picture>
+          <alttext>ASP Seite</alttext>
+          <text></text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Irgend etwas stimmt hier noch nicht, oder? Wir bekommen nur zwei Zeilen ausgegeben, obwohl wir drei Funktionen aufgerufen haben...&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Nein, es ist nat&amp;uuml;rlich alles in Ordnung, wir haben nur den QueryString vergessen.&lt;br /&gt;Also noch mal von vorne, diesmal mit dem Query:&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="picture">
+          <picture>Files/Pictures/Tutorials/VB6/_dlltestseite2.gif</picture>
+          <alttext>ASP Seite</alttext>
+          <text></text>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Stolz k&amp;ouml;nnen wir jetzt sagen, das wir eine eigene ActiveX-Komponente f&amp;uuml;r ASP geschrieben haben :-))&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Wenn wir jetzt noch etwas VB lernen, sind wir evtl. selber in der Lage, irgendwelche Upload-, Image-, oder Emailkomponenten zu schreiben.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="download">
+          <document>Files/Documents/_aspdlltut.zip</document>
+          <titletext>Download: aspdlltut.zip</titletext>
+          <text>aspdlltut.zip (9 KB)</text>
+          <icon></icon>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

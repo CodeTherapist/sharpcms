@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Aktion</pagename>
+    <name>aktion</name>
+    <menuname>Aktion</menuname>
+    <pageidentifier>german/aktion</pageidentifier>
+    <status>hide</status>
+    <template></template>
+    <lastedited></lastedited>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="formstart" name="Formstart" publish="false">
+          <subject>Aktion Flyer</subject>
+        </element>
+        <element type="formlist" name="Anrede" publish="false">
+          <caption>Anrede</caption>
+          <fieldname>Anrede</fieldname>
+          <element-list>
+            <item id="Frau_">Frau 
+</item>
+            <item id="Herr_">Herr 
+</item>
+          </element-list>
+          <option-list>
+            <item id="Frau_">Frau
+</item>
+            <item id="Herr">Herr </item>
+          </option-list>
+        </element>
+        <element type="formtext" name="Vorname" publish="false">
+          <caption>Vorname</caption>
+          <fieldname>Vorname</fieldname>
+        </element>
+        <element type="formtext" name="Nachname" publish="false">
+          <caption>Nachname</caption>
+          <fieldname>Nachname</fieldname>
+        </element>
+        <element type="formlongtext" name="Kommentar" publish="false">
+          <caption>Komentar</caption>
+          <fieldname>Komentar</fieldname>
+        </element>
+        <element type="formcheck" name="Ja/Nein" publish="false">
+          <caption>Emailssenden</caption>
+          <fieldname>Emailssenden</fieldname>
+        </element>
+        <element type="formend" name="Formende" publish="false" />
+      </elements>
+    </container>
+  </containers>
+</page>

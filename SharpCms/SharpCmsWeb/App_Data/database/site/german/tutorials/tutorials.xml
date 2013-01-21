@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Tutorials</pagename>
+    <name>tutorials</name>
+    <menuname>Tutorials</menuname>
+    <pageidentifier>german/tutorials/tutorials</pageidentifier>
+    <status>hide</status>
+    <lastedited></lastedited>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Tutorials</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>Einige der hier gezeigten Tutorials enthalten Beispieldateien zum Downloaden. Da zwei Entwicklungsmaschinen nur in den seltensten f&amp;auml;llen wirklich gleich sind, kann es immer wieder vorkommen, dass das eine oder andere Beispiel auf Ihrem Rechner nicht funktioniert. Beachten Sie deswegen auch unbedingt, die ben&amp;ouml;tigten Voraussetzungen, die am Anfang eines jeden Tutorials angegeben sind.</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="overview">
+          <text></text>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

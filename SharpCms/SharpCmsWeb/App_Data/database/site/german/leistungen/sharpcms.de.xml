@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>sharpcms.net</pagename>
+    <name>sharpcms.de</name>
+    <menuname>sharpcms.net</menuname>
+    <pageidentifier>german/leistungen/sharpcms.de</pageidentifier>
+    <status>open</status>
+    <lastedited>18.12.2007</lastedited>
+    <metakeywords>sharpcms, sharpcms.net, open source content managemen</metakeywords>
+    <metadescription>open source content managemen system</metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Deutschsprachige sharpcms.net Website</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;In Abstimmung mit den Entwicklern des sharpcms.net habe ich die deutschsprachige sharpcms.net Website erstellt und betreue diese zusammen mit &lt;a href="http://www.klickflupp.ch/" target="_blank"&gt;Thomas Huber&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Zu erreichen ist die Website unter &lt;a href="http://www.sharpcms.de/" target="_blank"&gt;http://www.sharpcms.de/&lt;/a&gt; und Dank &lt;a href="http://www.klickflupp.ch/" target="_blank"&gt;Thomas Huber&lt;/a&gt;&amp;nbsp; auch unter &lt;a href="http://www.sharpcms.ch/" target="_blank"&gt;http://www.sharpcms.ch/&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;F&amp;uuml;r Eilige habe ich hier eine Beschreibung des sharpcms.net zusammengefasst:&lt;/p&gt;&lt;h2&gt;Open Source&amp;nbsp; &lt;/h2&gt;&lt;p&gt;&amp;quot;sharpcms.net&amp;quot; ist ein Open Source Content Management System. &lt;/p&gt;&lt;h2&gt;Hoch flexibles Content Management &lt;/h2&gt;&lt;p&gt;Das &amp;quot;sharpcms.net&amp;quot; l&amp;auml;sst absolut freie Gestaltungsm&amp;ouml;glichkeiten zu. F&amp;uuml;r die Inhalte kann der Entwickler beliebige und beliebig viele &amp;quot;Content Templates&amp;quot; (Absatz, Bild,&amp;nbsp;Link, Gallery, etc.) anlegen. &lt;/p&gt;&lt;h2&gt;Minimale Anforderungen&lt;/h2&gt;&lt;p&gt;Das sharpcms.net l&amp;auml;sst sich auf jedem Webserver einsetzen, auf dem das .Net Framework 2.0 installiert ist. Da sharpcms.net keine Datenbank ben&amp;ouml;tigt, k&amp;ouml;nnen auch g&amp;uuml;nstigere Hostingangebote genutzt werden.&lt;/p&gt;&lt;p&gt;Die Administration l&amp;auml;sst sich intuitiv und ohne&amp;nbsp;Schulungsaufwand bedienen.&lt;/p&gt;&lt;h2&gt;F&amp;uuml;r jeden geeignet&lt;/h2&gt;&lt;p&gt;Geeignet f&amp;uuml;r kleine und mittelst&amp;auml;ndige Unternehmen, sowie Vereine und Private Webseiten. Bis zu 250 Einzelseiten lassen sich mit &amp;quot;sharpcms.net&amp;quot; problemlos verwalten.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Weitere Informationen zu sharpcms.net finden Sie auf der deutschsprachigen Projektseite:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.sharpcms.de/" target="_blank"&gt;http://www.sharpcms.de/&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture>Files/Pictures/banner/_sharpcms.gif</picture>
+          <picturepos>Right</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

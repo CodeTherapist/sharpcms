@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Warum ein CMS?</pagename>
+    <name>warum_cms</name>
+    <menuname>Warum ein CMS?</menuname>
+    <pageidentifier>german/leistungen/warum_cms</pageidentifier>
+    <status>hide</status>
+    <lastedited>18.12.2007</lastedited>
+    <metakeywords>Content Management System, CMS, dynamische Webseite</metakeywords>
+    <metadescription>Was ist ein CMS und wieso benötigt man ein CMS</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Warum ein CMS?</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Was ist ein CMS?&amp;nbsp;&amp;nbsp;&lt;/h2&gt;&lt;p&gt;Ein Content Management System (kurz: CMS) bietet Ihnen die M&amp;ouml;glichkeit, ohne Programmierkenntnisse die Inhalte Ihrer eigenen Website zu bearbeiten. Ein CMS bietet zus&amp;auml;tzlich die M&amp;ouml;glichkeit Texte, Dateien und Bilder zu verwalten und im Internet bereitzustellen.&lt;/p&gt;&lt;h2&gt;Einfache und schnelle Bearbeitung der Seiteninhalte&lt;/h2&gt;&lt;p&gt;In einem CMS k&amp;ouml;nnen Sie die Seiteninhalte Ihres Internetauftrittes einfach und schnell &amp;uuml;ber einen Browser (z. B. Internet Explorer, oder Firefox), direkt auf der Website, ohne Programmierkenntnisse bearbeiten. Sie m&amp;uuml;ssen keine zus&amp;auml;tzliche Software auf Ihren Rechnern installieren.&amp;nbsp;Mit sharbcms.net ben&amp;ouml;tigen Sie zum Beispiel weniger als eine Minute um eine neue Webseite anzulegen und nur ein paar weitere Minuten um Inhalte auf dieser Seite zu ver&amp;ouml;ffentlichen.&lt;/p&gt;&lt;h2&gt;Die Seiteninhalte sind immer Aktuell&lt;/h2&gt;&lt;p&gt;Da Sie mit verschiedenen Personen, von verschiedenen Orten gleichzeitig Ihre Website pflegen k&amp;ouml;nnen und durch die einfache und schnelle Bedienung, kann Ihr Webauftritt ohne viel Aufwand immer aktuell gehalten werden. &lt;/p&gt;&lt;h2&gt;Einheitliches Aussehen der einzelnen Seiten&lt;/h2&gt;&lt;p&gt;Ein CMS sichert Ihnen automatisch das einheitliche Aussehen Ihres Webauftrittes, da alle Seiten &amp;uuml;blicherweise mit der gleichen Layoutvorlage erstellt werden. Inhalt und Layout sind strikt voneinander getrennt und eine m&amp;ouml;gliche &amp;Auml;nderung des Layouts kann ohne viel Aufwand an einer Stelle gemacht werden.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

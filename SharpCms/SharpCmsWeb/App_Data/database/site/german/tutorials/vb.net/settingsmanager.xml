@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Application Settings lesen und schreiben</pagename>
+    <name>settingsmanager</name>
+    <menuname>Settingsmanager</menuname>
+    <pageidentifier>german/tutorials/vb.net/settingsmanager</pageidentifier>
+    <status>open</status>
+    <lastedited>25.10.2006</lastedited>
+    <metadescription>Methoden, um globale und benutzerspezifische Anwendungseinstellungen zu speichern und zu lesen.</metadescription>
+    <metakeywords>AppSettings, Application, System.Configuration, Config.PrivateFile</metakeywords>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Application Settings lesen und schreiben</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>2 lines</offset>
+        </element>
+        <element type="freetext">
+          <text>	&lt;p&gt;
+		Autor: Jürgen Gutsch&lt;/p&gt;
+	&lt;p&gt;
+		Version: 1.0&lt;/p&gt;
+	&lt;p&gt;
+		Sprache: vb.net&lt;/p&gt;
+	&lt;p&gt;
+		&amp;nbsp;&lt;/p&gt;
+	&lt;p&gt;
+		Benötigt wird:&lt;/p&gt;
+	&lt;p&gt;
+		.net Framework ab v2.0&lt;/p&gt;
+	&lt;p&gt;
+		VisualStudio.net&lt;/p&gt;
+	&lt;p&gt;
+		&amp;nbsp;&lt;/p&gt;
+	&lt;p&gt;
+		&amp;nbsp;&lt;/p&gt;
+	&lt;h3&gt;
+		Application Settings lesen und schreiben&lt;/h3&gt;
+	&lt;p&gt;
+		&amp;nbsp;&lt;/p&gt;
+	&lt;p&gt;
+		Beim erstellen einer größeren Desktopanwendung bin ich auf das Problem gestoßen,
+		dass ich benutzerdefinierte Einstellungen (Optionen die der Benutzer einstellen
+		kann) und globale Einstellungen (Optionen die vom Entwickler, oder von einem Administrator
+		vorgenommen werden können) auslesen muss. bei den globalen ist es kein großes Problem 
+		aus der app.config die entsprechenden Application Settings auszulesen. Wo aber sollte
+		ich die benutzerdefinierten Einstellungen auslesen, und vor allem speichern. Um
+		nicht das rat neu zu erfinden, ließ ich mir von Google folgenden Artikel suchen:
+		&lt;a href="http://www.xtremevbtalk.com/showthread.php?t=131671" target="_blank"&gt;http://www.xtremevbtalk.com/&lt;/a&gt;
+		wird eine Klasse vorgestellt, die wahlweise benutzerdefinierte Einstellungen im
+		Windows Benutzerverzeichnis speichert (\documents and settings\&amp;lt;username&amp;gt;\application
+		data), oder in den Windows Share Verzeichnissen ("\documents and settings\All Users\application
+		data")&lt;/p&gt;
+	&lt;p&gt;
+		&amp;nbsp;&lt;/p&gt;
+	&lt;p&gt;
+		Um jetzt meine AppSettings aus der web.config ebenfalls mit dieser Klasse auslesen können habe ich lediglich die Methode GetSetting() etwas ändern müssen:&lt;/p&gt;
+	&lt;pre&gt;&lt;font color="#0000FF"&gt;Public Function&lt;/font&gt; GetSetting(&lt;font color="#0000FF"&gt;ByVal&lt;/font&gt; key &lt;font color="#0000FF"&gt;As String&lt;/font&gt;) &lt;font color="#0000FF"&gt;As String&lt;/font&gt;
+    &lt;font color="#006600"&gt;'xml document object&lt;/font&gt;
+    &lt;font color="#0000FF"&gt;Dim&lt;/font&gt; xd &lt;font color="#0000FF"&gt;As New&lt;/font&gt; System.Xml.XmlDocument 
+    &lt;font color="#0000FF"&gt;Dim&lt;/font&gt; asr &lt;font color="#0000FF"&gt;As New&lt;/font&gt; System.Configuration.AppSettingsReader
+    &lt;font color="#006600"&gt;'load the xml file &lt;font color="#006600"&gt;
+    xd.Load(_configFileName) 
+    &lt;font color="#006600"&gt;'query for a value&lt;/font&gt; 
+    &lt;font color="#0000FF"&gt;Dim&lt;/font&gt; Node &lt;font color="#0000FF"&gt;As&lt;/font&gt; System.Xml.XmlNode = 
+        _ xd.DocumentElement.SelectSingleNode( 
+        _ "/configuration/appSettings/add[@key=""" &amp;amp; key &amp;amp; """]") 
+    &lt;font color="#006600"&gt;'return the value or nothing if it doesn't exist&lt;/font&gt;
+    &lt;font color="#0000FF"&gt;If Not&lt;/font&gt; Node &lt;font color="#0000FF"&gt;Is Nothing Then&lt;/font&gt;
+        &lt;font color="#0000FF"&gt;Return&lt;/font&gt;  Node.Attributes.GetNamedItem("value").Value 
+    &lt;font color="#0000FF"&gt;Else&lt;/font&gt;
+        &lt;font color="#0000FF"&gt;If Not&lt;/font&gt; asr.GetValue(key, &lt;font color="#0000FF"&gt;GetType&lt;/font&gt;(&lt;font color="#0000FF"&gt;String&lt;/font&gt; )) &lt;font color="#0000FF"&gt;Is Nothing Then&lt;/font&gt; 
+            &lt;font color="#0000FF"&gt;Return&lt;/font&gt;  asr.GetValue(key, &lt;font color="#0000FF"&gt;GetType&lt;/font&gt;(&lt;font color="#0000FF"&gt;String&lt;/font&gt; )) &lt;font color="#0000FF"&gt;
+        Else 
+            Return Nothing 
+        End If 
+    End If 
+End Function&lt;/font&gt;&lt;/pre&gt;
+	&lt;p&gt;
+		&amp;nbsp;&lt;/p&gt;
+	&lt;p&gt;
+		Ein Anwendungsbeispiel:&lt;/p&gt;
+	&lt;pre&gt;&lt;font color="#0000FF"&gt;Dim&lt;/font&gt; Setings &lt;font color="#0000FF"&gt;As New&lt;/font&gt; AppSettings(AppSettings.Config.PrivateFile) 
+&lt;font color="#0000FF"&gt;Dim&lt;/font&gt; strVar &lt;font color="#0000FF"&gt;As String&lt;/font&gt; = Setings.GetSetting("mysetting") 
+strVar = strVar &amp;amp; " Hallo Welt" 
+Setings.SaveSetting("mysetting", strVar) 
+strVar = Setings.GetSetting("mysetting")
+MsgBox(strVar)&lt;/pre&gt;
+	&lt;p&gt;
+		&amp;nbsp;&lt;/p&gt;
+	&lt;p&gt;
+		&amp;nbsp;&lt;/p&gt;</text>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

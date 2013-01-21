@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Kontakt</pagename>
+    <name>kontakt</name>
+    <menuname>Kontakt</menuname>
+    <pageidentifier>german/impressum/kontakt</pageidentifier>
+    <status>open</status>
+    <lastedited>18.12.2007</lastedited>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="false" name="">
+          <text>Kontakt</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="false" name="">
+          <text>&lt;p&gt;Sie haben die M&amp;ouml;glichkeit auch &amp;uuml;ber folgende Plattformen mit&amp;nbsp;uns in Kontakt zu&amp;nbsp;treten:&lt;/p&gt;
+&lt;p&gt;Email: &lt;a href="mailto:info@gutsch-online.de"&gt;info@gutsch-online.de&lt;/a&gt;&lt;br /&gt;Twitter: &lt;a href="http://twitter.com/gutschonline/"&gt;http://twitter.com/gutschonline/&lt;/a&gt;&lt;br /&gt;XING: &lt;a href="https://www.xing.com/companies/GUTSCH-ONLINESOFTWAREGMBH"&gt;https://www.xing.com/companies/GUTSCH-ONLINESOFTWAREGMBH&lt;/a&gt;&lt;br /&gt;Facebook: &lt;a href="http://facebook.com/GUTSCH.ONLINE.Software"&gt;http://facebook.com/GUTSCH.ONLINE.Software&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oder benutzen Sie doch ganz einfach unser Kontaktformular:&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="form" publish="false" name="">
+          <subject>Kontaktformular</subject>
+          <category-list>
+            <item id="Frau_">Frau
+</item>
+            <item id="Herr">Herr </item>
+          </category-list>
+          <element-list>
+            <item id="Vorname_">Vorname
+</item>
+            <item id="Nachname_">Nachname
+</item>
+            <item id="Email_">Email
+</item>
+            <item id="Web_">Web
+</item>
+            <item id="Telefon_">Telefon
+</item>
+          </element-list>
+        </element>
+      </elements>
+    </container>
+    <container name="content2">
+      <elements></elements>
+    </container>
+  </containers>
+</page>

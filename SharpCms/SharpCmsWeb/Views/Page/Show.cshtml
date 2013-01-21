@@ -1,0 +1,18 @@
+﻿@using SharpCms.Core
+@model SharpCms.Core.DataObjects.PageModel
+
+@{
+    ViewBag.Title = Model.Page.PageInfo.PageName;
+    ViewBag.Description = Model.Page.PageInfo.Description;
+    ViewBag.KeyWords = Model.Page.PageInfo.Tags.Join(",");
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{ Html.RenderPartial("menu", Model.SiteTree);}
+
+@foreach (var element in Html.Sharpcms().GetElementsForContainer(x => x.Name.Equals("content")))
+{
+    Html.RenderPartial(element.ElementTypeName, element);
+}
+
+

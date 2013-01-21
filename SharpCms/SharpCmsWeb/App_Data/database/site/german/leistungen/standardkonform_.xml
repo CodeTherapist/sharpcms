@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Standardkonform?</pagename>
+    <name>standardkonform_</name>
+    <menuname>Standardkonform?</menuname>
+    <pageidentifier>german/leistungen/standardkonform_</pageidentifier>
+    <status>hide</status>
+    <lastedited>24.07.2008</lastedited>
+    <metakeywords>Webentwiklung, standardkonform, xhtml</metakeywords>
+    <metadescription>Was sind standardkonforme webseiten</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Standardkonforme Webseiten?</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;p&gt;Auch im Web gibt es Standards an die man sich halten sollte. Jeder Hersteller eines Internetbrowsers muss daf&amp;uuml;r sorgen, dass sein Produkt alle Webseiten bestm&amp;ouml;glichst anzeigen kann. Um das zu erreichen halten sie sich zum gr&amp;ouml;&amp;szlig;ten Teil an die Empfehlungen, die vom W3 Consortium (kurz. W3C) im CERN, bei Genf, zusammen mit der Industrie erarbeitet werden.&lt;/p&gt;&lt;p&gt;Auf der anderen Seite ist der Webentwickler daf&amp;uuml;r verantwortlich seine Webseiten standardkonform umzusetzen, damit auch wirklich alle Browser seine Seiten richtig darstellen k&amp;ouml;nnen. &lt;/p&gt;&lt;p&gt;Standardkonform hei&amp;szlig;t auch zukunftsorientiert, denn die neuesten und auch die zuk&amp;uuml;nftigen Browsergenerationen k&amp;ouml;nnen somit einfach und kosteng&amp;uuml;nstig bedient werden. Standardkonform hei&amp;szlig;t auch Kostensenkung durch einfachere Wartung, da es eine strikte Trennung zwischen Design und Inhalten der Website gibt. &lt;/p&gt;&lt;p&gt;Standardkonforme Webseiten k&amp;ouml;nnen allerdings nicht nur von den aktuellen Browsern richtig dargestellt werden, sonder auch von alternativen Browsern wie auf mobilen Ger&amp;auml;ten (wie PDAs, modernen Handys), als auch z. B: von Screenreadern (f&amp;uuml;r sehbehinderte Menschen). Standardkonform ist also auch der erste Schritt in die Richtung zur barrierefreien Webentwicklung.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

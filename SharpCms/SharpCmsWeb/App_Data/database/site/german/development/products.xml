@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Products</pagename>
+    <name>products</name>
+    <menuname>Products</menuname>
+    <pageidentifier>german/development/products</pageidentifier>
+    <status>open</status>
+    <lastedited>jig</lastedited>
+    <metadescription>Produkte und Angebote</metadescription>
+    <metakeywords></metakeywords>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="paragraph">
+          <text>&lt;h1&gt;Software als Dienst&lt;/h1&gt;&lt;p&gt;Software zu kaufen, zu installieren und zu warten ist aufwendig und teuer. Alternativ nutzen Sie nur die Software die sie ben&amp;ouml;tigen, ohne sie zu kaufen, zu installieren und zu warten. Mieten Sie die Software, mieten Sie Teile der Software und zahlen Sie nur das, was sie wirklich ben&amp;ouml;tigen.&lt;/p&gt;&lt;p&gt;Die Idee ist nicht neu. In der Welt der Softwareentwicklung sogar schon &amp;auml;lter. Viele Anwendungen und Werkzeuge werden schon l&amp;auml;nger als Dienst zur Miete angeboten.&lt;/p&gt;&lt;h2&gt;Produkte&lt;/h2&gt;&lt;p&gt;in den n&amp;auml;chsten Wochen und Monaten werden wir hier Dienstleistungen vorstellen, die von uns entwickelt und angeboten werden. Drei Plattformen zur Unterst&amp;uuml;tzung&amp;nbsp;Ihrer Softwareentwicklung&amp;nbsp;sind in Arbeit:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Die erste Plattform betrifft die Transparenz Ihrer Arbeit&lt;/li&gt;&lt;li&gt;Die zweite Plattform betrifft die Automatisierung Ihrer Arbeit&lt;/li&gt;&lt;li&gt;Die dritte Plattform betrifft die Sicherheit Ihrer Software&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Bleiben Sie dran und bleiben Sie informiert.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

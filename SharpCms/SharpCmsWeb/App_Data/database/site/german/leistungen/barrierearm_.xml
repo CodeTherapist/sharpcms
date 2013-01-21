@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Wieso Barrierearm?</pagename>
+    <name>barrierearm_</name>
+    <menuname>Wieso Barrierearm?</menuname>
+    <pageidentifier>german/leistungen/barrierearm_</pageidentifier>
+    <status>hide</status>
+    <lastedited>28.01.2008</lastedited>
+    <metakeywords></metakeywords>
+    <metadescription>Warum sollte Websites barrierearm entwickelt werden?</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Was heißt Barrierearm?</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;p&gt;In der Europ&amp;auml;ischen Union gibt es derzeit ca. 38 Millionen Menschen mit verschieden starken Behinderungen, von leichten Sehschw&amp;auml;chen, bis hin zu schweren Behinderungen wie Blindheit, motorischen St&amp;ouml;rungen, oder schwerer Mehrfachbehinderung. Mehr als 20 Prozent der Menschen in der EU sind &amp;uuml;ber 60 Jahre alt und leiden altersbedingt an Sehschw&amp;auml;chen und weiteren Einschr&amp;auml;nkungen, die es ihnen schwer bis unm&amp;ouml;glich machen die Inhalte herk&amp;ouml;mmlicher Webseiten im Internet zu Besuchen und deren Inhalte zu erfassen.&lt;/p&gt;&lt;p&gt;Der Sinn der barrierearmen und der barrierefreien Webentwicklung ist es, diesen Menschen durch standardkonformes HTML, flexiblen Layouts, skalierbaren Schriften und kontrastreichen Farben, das Erfassen der Inhalte zu erleichtern.&lt;/p&gt;&lt;p&gt;Viele Menschen gehen aufgrund ihrer Behinderung oder ihres Alters, nicht oft aus dem Haus, oder ihnen ist der Gang zum Einkauf oder zum Rathaus zu beschwerlich. F&amp;uuml;r diese Menschen ist es meist einfacher Beh&amp;ouml;rdeng&amp;auml;nge, Anfragen, Bestellungen und Eink&amp;auml;ufe &amp;uuml;ber das Internet zu erledigen.&lt;/p&gt;&lt;p&gt;Mit herk&amp;ouml;mmlichen Webseiten werden nun diese Menschen, die nat&amp;uuml;rlich auch potentielle Kunden sind, ausgesperrt. &amp;Auml;hnlich wie durch eine fehlende Rollstuhlrampe an einem erh&amp;ouml;hten Ladeneingang.&lt;/p&gt;&lt;p&gt;Sichern Sie auch diesen Kunden den Zutritt in Ihr Gesch&amp;auml;ft. Zeigen Sie auch diesen Kunden Ihr reichhaltiges Angebot.&lt;/p&gt;</text>
+          <link></link>
+          <picture>Files/Pictures/barrierearm.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

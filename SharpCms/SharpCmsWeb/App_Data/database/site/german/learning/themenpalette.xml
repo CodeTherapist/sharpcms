@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Themenpalette</pagename>
+    <name>themenpalette</name>
+    <menuname>Themenpalette</menuname>
+    <pageidentifier>german/learning/themenpalette</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+    <lastedited></lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="paragraph">
+          <text>&lt;h1&gt;Unsere Themenpalette&lt;/h1&gt;&lt;h3&gt;Web&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;HTML, XHTML, HTML5&lt;/li&gt;&lt;li&gt;CSS, CSS 3&lt;/li&gt;&lt;li&gt;Javascript, jQuery, Objektorientierung mit&amp;nbsp;Javascript&lt;/li&gt;&lt;li&gt;Silverlight 4 und 5, Expression Blend&lt;/li&gt;&lt;li&gt;ASP.NET und ASP.NET MVC&lt;/li&gt;&lt;li&gt;Accessibillity im Web&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Client&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;WPF, Winforms&lt;/li&gt;&lt;li&gt;HTML, CSS&lt;/li&gt;&lt;li&gt;Silverlight&lt;/li&gt;&lt;li&gt;Windows Phone&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Server&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;WCF, JSON, REST, SOAP&lt;/li&gt;&lt;li&gt;ASP.NET und ASP.NET MVC&lt;/li&gt;&lt;li&gt;IIS, SQL Server&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Infrastruktur&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;ALM mit TFS&lt;/li&gt;&lt;li&gt;ALM mit Mercurial, Trac und Jenkins&lt;/li&gt;&lt;li&gt;Mercurial, Git&lt;/li&gt;&lt;li&gt;Trac, BugNet&lt;/li&gt;&lt;li&gt;TeamCity, Jenkins (Hudson)&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Werkzeuge&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Visual Studio&lt;/li&gt;&lt;li&gt;ReSharper&lt;/li&gt;&lt;li&gt;Test-Werkzeuge&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Code-Qualit&amp;auml;t&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Test&amp;nbsp;Driven Developement&lt;/li&gt;&lt;li&gt;Behavior Driven Developement&lt;/li&gt;&lt;li&gt;Test-Werkzeuge&lt;/li&gt;&lt;li&gt;Continous Integration&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Sprachen &amp;amp; Frameworks&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;.NET / Mono&amp;nbsp;&lt;/li&gt;&lt;li&gt;C#, VB&lt;/li&gt;&lt;li&gt;Javascript&lt;/li&gt;&lt;li&gt;Prism&lt;/li&gt;&lt;li&gt;Inversion of Control (Unity, MEF, LightCore)&lt;/li&gt;&lt;li&gt;NHibernate, Entity Framework&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

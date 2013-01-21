@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Entwicklung</pagename>
+    <name>development</name>
+    <menuname>Entwicklung</menuname>
+    <pageidentifier>german/development</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <metakeywords>Entwicklung, Produkte</metakeywords>
+    <metadescription>Entwiclung und eigene Produkte</metadescription>
+    <lastedited></lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="paragraph" publish="false" name="">
+          <text>&lt;h1&gt;Entwicklung&lt;/h1&gt;
+&lt;p&gt;Sehr gerne unterst&amp;uuml;tzen wir Sie in verschiedenen Arten&amp;nbsp;bei der Umsetzung Ihrer Softwareprojekte.&lt;/p&gt;
+&lt;h2&gt;Projekte&lt;/h2&gt;
+&lt;p&gt;Wenn Ihnen Ressourcen oder Kompetenzen&amp;nbsp;im Projekt fehlen, unterst&amp;uuml;tzen wir sie gerne bei der Umsetzung Ihres Software-Projekts. Sie k&amp;ouml;nnen auch Projekte oder Teilprojekte komplett von uns umsetzen lassen, um so Zeit f&amp;uuml;r andere Dinge zu haben. Sie profitieren dadurch auch von dem umfangreichen Knowhow und dem hohen Qualit&amp;auml;tsbewusstsein unseres &lt;a href="show/german/about/das_team.aspx"&gt;Teams&lt;/a&gt;. Lassen Sie sich &amp;uuml;berzeugen und nehmen Sie &lt;a href="show/german/impressum/kontakt.aspx"&gt;Kontakt&lt;/a&gt; mit uns auf.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

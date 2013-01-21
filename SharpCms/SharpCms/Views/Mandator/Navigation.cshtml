@@ -1,0 +1,17 @@
+﻿@using SharpCms.Code
+@model IEnumerable<SharpCms.Controllers.NavigationItem>
+
+@{
+    ViewBag.Title = "Navigation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul class="navigation">
+    @foreach (var item in Model)
+    {
+        var jsUrl = String.Format("javascript:top.navigateTo('{0}')", Html.ActionUrl(item.ActionName, item.ControllerName));
+        <li>
+            <a href="@jsUrl">@item.Name</a>
+        </li>
+    }
+</ul>

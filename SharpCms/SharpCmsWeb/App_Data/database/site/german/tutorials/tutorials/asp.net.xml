@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>ASP.NET</pagename>
+    <name>asp.net</name>
+    <menuname>ASP.NET</menuname>
+    <pageidentifier>german/tutorials/tutorials/asp.net</pageidentifier>
+    <status>open</status>
+    <lastedited>22.07.2008</lastedited>
+    <metakeywords></metakeywords>
+    <metadescription>ASP.NET Tutorials</metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>ASP.NET</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="overview" />
+      </elements>
+    </container>
+  </containers>
+</page>

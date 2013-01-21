@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>GO.Gallery</pagename>
+    <name>go.gallery</name>
+    <menuname>GO.Gallery</menuname>
+    <pageidentifier>german/products/go.gallery</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metadescription></metadescription>
+    <metakeywords></metakeywords>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="paragraph">
+          <header>GO.Gallery</header>
+          <headerstyle>Header1</headerstyle>
+          <text></text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

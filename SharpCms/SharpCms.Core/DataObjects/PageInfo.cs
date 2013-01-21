@@ -5,9 +5,14 @@ namespace SharpCms.Core.DataObjects
 {
     public class PageInfo
     {
+        public PageInfo()
+        {
+            Children = new List<PageInfo>();
+        }
         public Guid Id { get; set; }
         public string Menuname { get; set; }
         public string PageName { get; set; }
+        public string UrlName { get; set; }
         public int Version { get; set; }
         public PageState PageState { get; set; }
         public NavState NavState { get; set; }
@@ -18,10 +23,9 @@ namespace SharpCms.Core.DataObjects
         public string Template { get; set; }
         public string LinkTo { get; set; }
         public bool InPath { get; set; }
-        public IEnumerable<PageInfo> Children { get; set; }
+        public ICollection<PageInfo> Children { get; set; }
         public IEnumerable<GroupInfo> ExtranetGroups { get; set; }
         public IEnumerable<GroupInfo> EditorGroups { get; set; }
-
-        public string TemplateName { get; set; }
+        public DateTime LastEdited { get; set; }
     }
 }

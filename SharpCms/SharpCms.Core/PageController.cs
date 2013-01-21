@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Web.Mvc;
 using SharpCms.Core.Data;
@@ -13,22 +12,25 @@ namespace SharpCms.Core
         {
             var path = new[] { page1, page2, page3, page4, page5 };
 
-            var siteTree = TemporaryData.GetSiteTree();
+            var siteTree = PageData.GetSiteTree();
 
             var model = CreatePageModel(siteTree, path);
 
             return View(model.Page.PageInfo.Template, model);
         }
 
-        private PageModel CreatePageModel(PageInfo siteTree, string[] path)
+        private PageModel CreatePageModel(PageInfo siteTree, IList<string> path)
         {
-            var homepage = GetCurrentPage(siteTree, path, 0);
+            var homepage = GetCurrentPageInfo(siteTree, path, 0);
+
+            var containers = PageData.GetCurrentPageContainers(homepage);
 
             var page = new PageModel
                 {
                     Page = new Page
                         {
-                            PageInfo = homepage
+                            PageInfo = homepage,
+                            Containers = containers
                         },
                     SiteTree = siteTree
                 };
@@ -36,7 +38,7 @@ namespace SharpCms.Core
             return page;
         }
 
-        private PageInfo GetCurrentPage(PageInfo siteTree, IList<string> path, int level)
+        private PageInfo GetCurrentPageInfo(PageInfo siteTree, IList<string> path, int level)
         {
             if (siteTree.Children != null)
             {
@@ -44,17 +46,19 @@ namespace SharpCms.Core
                 {
                     if (path[level] != null)
                     {
-                        if (pageInfo.PageName == path[level])
+                        if (pageInfo.UrlName == path[level])
                         {
-                            return GetCurrentPage(pageInfo, path, level + 1);
+                            return GetCurrentPageInfo(pageInfo, path, level + 1);
                         }
                     }
                 }
             }
+
             if (level == 0)
             {
                 return siteTree.Children.FirstOrDefault();
             }
+
             return siteTree;
         }
     }

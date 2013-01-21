@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>VB6</pagename>
+    <name>vb6</name>
+    <menuname>VB6</menuname>
+    <pageidentifier>german/tutorials/vb6</pageidentifier>
+    <status>open</status>
+    <lastedited>07.12.2006</lastedited>
+    <metadescription>VB6 Tutorials</metadescription>
+    <metakeywords></metakeywords>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>VB6 Tutorials</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>2 lines</offset>
+        </element>
+        <element type="overview">
+          <text>text</text>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

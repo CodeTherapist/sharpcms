@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Listen-Controls füllen mit ListItems</pagename>
+    <name>listen-controls_f_llen_mit_listitems</name>
+    <menuname>ListControls</menuname>
+    <pageidentifier>german/tutorials/tutorials/asp.net/listen-controls_f_llen_mit_listitems</pageidentifier>
+    <status>open</status>
+    <lastedited>07.01.2004</lastedited>
+    <metadescription>Dieses Tutorial Beschreibt den Gebrauch von System.Web.UI.Webcontrols.Listitem mit diversen Listen-Controls</metadescription>
+    <metakeywords>System.Web.UI.Webcontrols.Listitem, Listen, asp.net, vb.net</metakeywords>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Listen-Controls füllen mit ListItems</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>2 lines</offset>
+        </element>
+        <element type="freetext">
+          <text>&lt;p&gt;Autor: Jürgen Gutsch&lt;/p&gt;
+&lt;p&gt;Version: 1.0&lt;/p&gt;
+&lt;p&gt;Sprache: vb.net&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Benötigt wird:&lt;/p&gt;
+&lt;p&gt;.net-Framework ab v1.x.xxxx&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Getestet auf: winXP-Professional (IIS 5.1)&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3&gt;Listen-Controls&lt;/h3&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Listen-Controls sind alle Steuerelemente, mit denen Listenauswahlen generiert werden können. Hier mal die wichtigsten:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;DropDownList&lt;/b&gt; (System.Web.UI.WebControls.DropDownList)&lt;/p&gt;
+&lt;pre&gt;&amp;lt;asp:DropDownList id="DropDownList1" runat="server" /&amp;gt;&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;ListBox&lt;/b&gt; (System.Web.UI.WebControls.ListBox)&lt;/p&gt;
+&lt;pre&gt;&amp;lt;asp:ListBox id="ListBox1" runat="server" /&amp;gt;&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;RadioButtonList&lt;/b&gt; (System.Web.UI.WebControls.RadioButtonList)&lt;/p&gt;
+&lt;pre&gt;&amp;lt;asp:RadioButtonList id="RadioButtonList1" runat="server" /&amp;gt;&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;CheckBoxList&lt;/b&gt; (System.Web.UI.WebControls.CheckBoxList)&lt;/p&gt;
+&lt;pre&gt;&amp;lt;asp:CheckBoxList id="CheckBoxList1" runat="server" /&amp;gt;&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;HtmlSelect&lt;/b&gt; (System.Web.UI.HtmlControls.HtmlSelect)&lt;/p&gt;
+&lt;pre&gt;&amp;lt;select name="HtmlSelect1" id="HtmlSelect1" runat="server"&amp;gt;&amp;lt;select&amp;gt;&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3&gt;ListItems&lt;/h3&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Alle oben genannten Controls können mit ListItems (System.Web.UI.WebControls.ListItem) gefüllt werden. Diese ListItems bilden dann die ChildControls dieser Steuerelemente.&lt;/p&gt;
+&lt;p&gt;ListItems bilden für die DropDownList, die ListBox und das HtmlSelect die &amp;lt;option&amp;gt;-Tags. Für die RadioButtonList eine Liste der zusammengehörenden RadioButtons (&amp;lt;input type="radio" ... /&amp;gt;), &amp;auml;hnliches gilt für die CheckBoxList.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h3&gt;Befüllen der Listen-Controls&lt;/h3&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Hier eine universale Funktion, die jede der obigen Controls füllen kann:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+ &lt;pre&gt;   &lt;font color="#0000FF"&gt;Private Sub&lt;/font&gt; FillBoxes(&lt;font color="#0000FF"&gt;ByRef&lt;/font&gt; Box &lt;font color="#0000FF"&gt;As&lt;/font&gt; System.Object, _
+            &lt;font color="#0000FF"&gt;ByRef&lt;/font&gt; ds &lt;font color="#0000FF"&gt;As&lt;/font&gt; System.Data.DataSet)
+
+        &lt;font color="#006600"&gt;' &gt;&gt;&gt;&gt;&gt; eventuelle vorhandene Werte löschen&lt;/font&gt;
+        Box.Items.Clear()
+
+        &lt;font color="#006600"&gt;' &gt;&gt;&gt;&gt;&gt; DatarowArray mit den Werten im Dataset Füllen&lt;/font&gt;
+        &lt;font color="#0000FF"&gt;Dim&lt;/font&gt; dr() &lt;font color="#0000FF"&gt;As&lt;/font&gt; System.Data.DataRow = ds.Tables(0).Select()
+
+        &lt;font color="#006600"&gt;' &gt;&gt;&gt;&gt;&gt; Variable "ListItem" definieren&lt;/font&gt;
+        &lt;font color="#0000FF"&gt;Dim&lt;/font&gt; ListItem &lt;font color="#0000FF"&gt;As&lt;/font&gt; System.Web.UI.WebControls.ListItem
+
+        &lt;font color="#006600"&gt;' &gt;&gt;&gt;&gt;&gt; Zähler für die ForSchleife&lt;/font&gt;
+        &lt;font color="#0000FF"&gt;Dim&lt;/font&gt; i &lt;font color="#0000FF"&gt;As Integer&lt;/font&gt;
+
+        &lt;font color="#0000FF"&gt;For&lt;/font&gt; i = 0 &lt;font color="#0000FF"&gt;To&lt;/font&gt; dr.Length - 1
+            &lt;font color="#006600"&gt;' &gt;&gt;&gt;&gt;&gt; ListItem deklarieren&lt;/font&gt;
+            ListItem = &lt;font color="#0000FF"&gt;New&lt;/font&gt; System.Web.UI.WebControls.ListItem()
+			
+            &lt;font color="#006600"&gt;' &gt;&gt;&gt;&gt;&gt; Value setzen&lt;/font&gt;
+            ListItem.Value = dr(i).Item(0).ToString
+            &lt;font color="#006600"&gt;' &gt;&gt;&gt;&gt;&gt; sichtbaren Text setzen&lt;/font&gt;
+            ListItem.Text = dr(i).Item(1).ToString
+            &lt;font color="#006600"&gt;' &gt;&gt;&gt;&gt;&gt; erstes ListItem Selected setzen&lt;/font&gt;
+            &lt;font color="#0000FF"&gt;If&lt;/font&gt; i = 0 &lt;font color="#0000FF"&gt;Then&lt;/font&gt; ListItem.Selected = &lt;font color="#0000FF"&gt;True&lt;/font&gt;
+
+            &lt;font color="#006600"&gt;' &gt;&gt;&gt;&gt;&gt; Listitem dem Feld hinzufügen&lt;/font&gt;
+            Box.Items.Add(ListItem)
+
+            &lt;font color="#006600"&gt;' &gt;&gt;&gt;&gt;&gt; und ListItem zerstören&lt;/font&gt;
+            ListItem = &lt;font color="#0000FF"&gt;Nothing&lt;/font&gt;
+        &lt;font color="#0000FF"&gt;Next&lt;/font&gt;
+        dr = &lt;font color="#0000FF"&gt;Nothing&lt;/font&gt;
+    &lt;font color="#0000FF"&gt;End Sub&lt;/font&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Diese Funktion erwartet ein Steuerelement (hier "Box" als System.Object deklariert, weil ich kein übergeordnetes Control gefunden habe, dass die Eigenschaft "Items" besitzt und alle oben genannten Controls abbilden kann), und ein Dataset (mit mindestens einer DataTable, diese enth&amp;auml;lt wiederum mindestens zwei DataColumns,  die erste DataColumn steht für den Wert (Value) des ListItems und die zweite für den Text der angezeigt werden soll).&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Die Daten des DataSet werden in ein DataRow-Array geladen, welches dann anschließend in der Schleife ausgelesen wird. Innerhalb der Schleife werden die ListItems erzeugt (ListItem = New System.Web.UI.WebControls.ListItem()) und dem Control hinzugefügt (Box.Items.Add(ListItem)).&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Viel mehr muss, glaube ich, nicht zu der Funktion gesagt werden...&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

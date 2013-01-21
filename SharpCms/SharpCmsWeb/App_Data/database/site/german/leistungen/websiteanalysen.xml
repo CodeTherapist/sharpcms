@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Websiteanalysen</pagename>
+    <name>websiteanalysen</name>
+    <menuname>Websiteanalysen</menuname>
+    <pageidentifier>german/leistungen/websiteanalysen</pageidentifier>
+    <status>hide</status>
+    <template></template>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+    <lastedited></lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Analysen bestehender Websites</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Suchmaschinen&lt;/h2&gt;&lt;p&gt;Um schnell im Internet gefunden zu werden sollte Ihre Website auch&amp;nbsp;f&amp;uuml;r Suchmaschinen optimiert sein. Es reicht nicht, die Website bei diversen Suchmaschinen anzumelden. Ihre Seite sollte auch von Suchmaschinen gelesen und analysiert werden k&amp;ouml;nnen, denn moderne Suchmaschinen erkennen nicht nur Titel, Beschreibung und &amp;quot;Meta-Tags&amp;quot; sondern auch den eigentlichen relevanten Inhalt.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Erreichbarkeit&lt;/h2&gt;&lt;p&gt;Ist Ihre Website auch wirklich zu 100% erreichbar? Ist Ihre Website auch von jedem Menschen erreichbar? Wie auch jede Suchmaschine, sollte auch jeder Mensch auf Ihre Website zugreifen k&amp;ouml;nnen.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Qualit&amp;auml;t&lt;/h2&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Fehler&lt;/h2&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Vorträge</pagename>
+    <name>lectures</name>
+    <menuname>Vorträge</menuname>
+    <pageidentifier>german/tutorials/lectures</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+    <lastedited></lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Vorträge</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Konferenzen&lt;/h2&gt;&lt;p&gt;19.10.2010 - &lt;a href="http://www.prioconference.de/"&gt;prio.conference&lt;/a&gt; - WebDAV - Die universelle Schnittstelle&amp;nbsp;&lt;/p&gt;&lt;p&gt;28.08.2010 - &lt;a href="http://www.seesharpparty.de"&gt;See# Party&lt;/a&gt;: NoSQL &amp;ndash; Objekt Datenbanken im Vergleich&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Usergroups&lt;/h2&gt;&lt;p&gt;09.12.2009 - Barrierefreie Anwendungen mit ASP.NET&lt;/p&gt;&lt;p&gt;14.10.2009 - ASP.NET Best Practices&lt;/p&gt;&lt;p&gt;15.04.2009 - Vorstellung der technischen Umsetzung der Stammtisch Website&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

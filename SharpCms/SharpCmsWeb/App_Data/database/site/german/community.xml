@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Community</pagename>
+    <name>community</name>
+    <menuname>Community</menuname>
+    <pageidentifier>german/community</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <metakeywords>Community</metakeywords>
+    <metadescription>.NET-Community</metadescription>
+    <lastedited></lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="paragraph">
+          <text>&lt;h1&gt;Die .NET-Community&amp;nbsp;&lt;/h1&gt;&lt;p&gt;Ohne die .NET-Community w&amp;uuml;rde es uns nicht geben. Somit unterst&amp;uuml;tzen wir die .NET-Community auf vielf&amp;auml;ltige Weise. Speziell zwei Community-Projekte werden von uns besonders&amp;nbsp;gef&amp;ouml;rdert:&lt;/p&gt;&lt;h2&gt;.NET-Stammtisch Konstanz-Kreuzlingen&lt;/h2&gt;&lt;p&gt;Im Jahre 2009 haben Peter Bucher und J&amp;uuml;rgen Gutsch die grenz&amp;uuml;bergreifende Usergroup .NET-Stammtisch Konstanz-Kreuzlingen ins Leben gerufen. Die&amp;nbsp; Usergroup trifft sich regelm&amp;auml;&amp;szlig;ig, jeden zweiten Mittwoch im Monat, um einen Vortrag zu einem .NET-Relevanten Thema zu erleben und um &amp;uuml;ber .NET-Themen zu diskutieren. In der Vergangenheit waren schon einige Gr&amp;ouml;&amp;szlig;en aus der .NET-Community als Referenten vor Ort um ihr Wissen und Ihre Erfahrungen mit der Usergroup zu teilen.&lt;/p&gt;&lt;p&gt;Website: &lt;a href="http://www.dotnetkk.de/"&gt;www.dotnetkk.de&lt;/a&gt; &lt;/p&gt;&lt;h2&gt;See# Party&lt;/h2&gt;&lt;p&gt;Im Sommer 2010 und im Sommer&amp;nbsp;2011 fanden die ersten beiden Entwickler-Konferenzen der Usergroup .NET-Stammtisch Konstanz-Kreuzlingen statt, eine Konferenz von und f&amp;uuml;r die .NET-Community und Interessierte in der Schweiz, Deutschland und &amp;Ouml;sterreich.&amp;nbsp;Diese Konferenz bietet den Teilnehmern viele interessante Vortr&amp;auml;ge aus dem .NET-Umfeld, vorgetragen von namhaften Entwicklern aus der .NET-Community. Die See# Party soll eine g&amp;uuml;nstige und nahe Alternative zu den gro&amp;szlig;en Konferenzen darstellen.&lt;/p&gt;&lt;p&gt;Website: &lt;a href="http://www.seesharpparty.de/"&gt;www.seesharpparty.de&lt;/a&gt; &lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+    <container name="content2">
+      <elements>
+        <element type="paragraph">
+          <text>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;img src="download/Files/Pictures/logo_dotnetkk.png.aspx" width="200" height="107" /&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;img src="download/Files/Pictures/thumbs/logo_seesharpparty_200x0_False.jpg.aspx" width="200" height="74" /&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

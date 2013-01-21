@@ -1,177 +1,119 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.IO;
+using System.Web;
+using System.Xml.Linq;
 using SharpCms.Core.DataObjects;
 
 namespace SharpCms.Core.Data
 {
-    public class TemporaryData
+    public class PageData
     {
-        public static PageInfo GetSiteTree()
+        internal static HttpServerUtility Server
         {
-            var siteTree =
+            get { return HttpContext.Current.Server; }
+        }
 
-                new PageInfo
-                    {
-                        Id = Guid.NewGuid(),
-                        Menuname = string.Empty,
-                        InPath = true,
-                        PageName = "root",
-                        Children = new[]
-                            {
-                                new PageInfo
-                                    {
-                                        Id = Guid.NewGuid(),
-                                        PageName = "Home",
-                                        Menuname = "Home",
-                                        Description =
-                                            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ",
-                                        Template = "TemplateA",
-                                        InPath = false,
-                                        Children = new[]
-                                            {
-                                                new PageInfo
-                                                    {
-                                                        Id = Guid.NewGuid(),
-                                                        PageName = "Company",
-                                                        Menuname = "Company",
-                                                        Description =
-                                                            "Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-                                                        Template = "TemplateB",
-                                                        InPath = false
-                                                    },
-                                                new PageInfo
-                                                    {
-                                                        Id = Guid.NewGuid(),
-                                                        PageName = "Haelt",
-                                                        Menuname = "Haelt",
-                                                        Description =
-                                                            "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. ",
-                                                        Template = "TemplateB",
-                                                        InPath = false
-                                                    }
-                                            }
-                                    },
-                                new PageInfo
-                                    {
-                                        Id = Guid.NewGuid(),
-                                        PageName = "Products",
-                                        Menuname = "Products",
-                                        Description =
-                                            "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. ",
-                                        Template = "TemplateA",
-                                        InPath = false,
-                                        Children = new[]
-                                            {
-                                                new PageInfo
-                                                    {
-                                                        Id = Guid.NewGuid(),
-                                                        PageName = "Product A",
-                                                        Menuname = "Product A",
-                                                        Description =
-                                                            "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. ",
-                                                        Template = "TemplateB",
-                                                        InPath = false
-                                                    },
-                                                new PageInfo
-                                                    {
-                                                        Id = Guid.NewGuid(),
-                                                        PageName = "Product B",
-                                                        Menuname = "Product B",
-                                                        Description = "Nullam dictum felis eu pede mollis pretium. ",
-                                                        Template = "TemplateB",
-                                                        InPath = false
-                                                    },
-                                                new PageInfo
-                                                    {
-                                                        Id = Guid.NewGuid(),
-                                                        PageName = "Product C",
-                                                        Menuname = "Product C",
-                                                        Description =
-                                                            "Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.  ",
-                                                        Template = "TemplateB",
-                                                        InPath = false
-                                                    },
-                                                new PageInfo
-                                                    {
-                                                        Id = Guid.NewGuid(),
-                                                        PageName = "Product D",
-                                                        Menuname = "Product D",
-                                                        Description =
-                                                            "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.  ",
-                                                        Template = "TemplateB",
-                                                        InPath = false
-                                                    },
-                                                new PageInfo
-                                                    {
-                                                        Id = Guid.NewGuid(),
-                                                        PageName = "Product E",
-                                                        Menuname = "Product E",
-                                                        Description =
-                                                            "Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.",
-                                                        Template = "TemplateB",
-                                                        InPath = false
-                                                    }
-                                            }
-                                    },
-                                new PageInfo
-                                    {
-                                        Id = Guid.NewGuid(),
-                                        PageName = "About Us",
-                                        Menuname = "About Us",
-                                        Description =
-                                            "Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. ",
-                                        Template = "TemplateA",
-                                        InPath = false,
-                                        Children = new[]
-                                            {
-                                                new PageInfo
-                                                    {
-                                                        Id = Guid.NewGuid(),
-                                                        PageName = "Contact",
-                                                        Menuname = "Contact",
-                                                        Description =
-                                                            "Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.",
-                                                        Template = "TemplateA",
-                                                        InPath = false
-                                                    },
-                                                new PageInfo
-                                                    {
-                                                        Id = Guid.NewGuid(),
-                                                        PageName = "Jobs",
-                                                        Menuname = "Jobs",
-                                                        Description =
-                                                            "Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.",
-                                                        Template = "TemplateA",
-                                                        InPath = false
-                                                    }
-                                            }
-                                    },
-                                new PageInfo
-                                    {
-                                        Id = Guid.NewGuid(),
-                                        PageName = "Imprint",
-                                        Menuname = "Imprint",
-                                        Description =
-                                            " Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.",
-                                        Template = "TemplateA",
-                                        InPath = false,
-                                        Children = new[]
-                                            {
-                                                new PageInfo
-                                                    {
-                                                        Id = Guid.NewGuid(),
-                                                        PageName = "The Way to Us",
-                                                        Menuname = "The Way to Us",
-                                                        Description =
-                                                            " Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.",
-                                                        Template = "TemplateB",
-                                                        InPath = false
-                                                    }
-                                            }
-                                    }
-                            }
-                    };
+        internal static PageInfo GetSiteTree()
+        {
+            var document = XDocument.Load(new FileStream(Server.MapPath("/App_Data/database/tree.xml"), FileMode.Open, FileAccess.Read));
+
+            var tree = document.Element("tree");
+            var siteTree = new PageInfo
+                {
+                    Id = Guid.NewGuid(),
+                    PageIdentifier = String.Empty,
+                    Menuname = string.Empty,
+                    InPath = true,
+                    PageName = "root",
+                };
+
+            AddSubPages(siteTree, tree);
 
             return siteTree;
+        }
+
+        private static void AddSubPages(PageInfo parentPage, XContainer parentElemet)
+        {
+            foreach (var element in parentElemet.Elements())
+            {
+                var page = new PageInfo
+                    {
+                        Id = Guid.NewGuid(),
+                        PageIdentifier = element.Attribute("pageidentifier").Value,
+                        Menuname = element.Attribute("menuname").Value,
+                        PageName = element.Attribute("pagename").Value,
+                        UrlName = element.Name.LocalName,
+                        InPath = false,
+                        NavState = (NavState)Enum.Parse(typeof(NavState), element.Attribute("status").Value.ToUpper()),
+                        LastEdited = DateTime.Now,
+                        Tags = element.Attribute("metakeywords").Value.Split(new[] { ',' }),
+                        Description = element.Attribute("metadescription").Value,
+                        Template = "Show"
+                    };
+                parentPage.Children.Add(page);
+                AddSubPages(page, element);
+
+            }
+        }
+
+
+        internal static ICollection<Container> GetCurrentPageContainers(PageInfo currentpage)
+        {
+            var pagepath = Server.MapPath(String.Format("/App_Data/database/site/{0}.xml", currentpage.PageIdentifier));
+            var document = XDocument.Load(new FileStream(pagepath, FileMode.Open, FileAccess.Read));
+
+            var tree = document.Element("page").Elements("containers");
+
+            var result = new Collection<Container>();
+
+            foreach (var xcontainer in tree.Elements("container"))
+            {
+                var container = new Container
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = xcontainer.Attribute("name").Value
+                    };
+
+                AddElements(container, xcontainer);
+
+                result.Add(container);
+            }
+
+            return result;
+        }
+
+        private static void AddElements(Container container, XElement xcontainer)
+        {
+            foreach (var xelement in xcontainer.Element("elements").Elements("element"))
+            {
+                var element = new Element
+                    {
+                        Id = Guid.NewGuid(),
+                        ElementTypeName = xelement.Attribute("type").Value,
+                        Published = true
+                    };
+
+                AddParameters(element, xelement);
+
+                container.Elements.Add(element);
+            }
+        }
+
+        private static void AddParameters(Element element, XContainer xelement)
+        {
+            foreach (var xparameter in xelement.Elements())
+            {
+                var parameter = new Parameter()
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = xparameter.Name.LocalName,
+                        Value = xparameter.Value,
+                        Type = typeof(string)
+                    };
+                element.Parameters.Add(parameter);
+            }
         }
     }
 }

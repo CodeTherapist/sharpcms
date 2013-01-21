@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Blog-Artikel</pagename>
+    <name>null</name>
+    <menuname>Blog-Artikel</menuname>
+    <pageidentifier>german/tutorials/null</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <metakeywords>Blog</metakeywords>
+    <metadescription>Blog</metadescription>
+    <lastedited></lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>ASP.NET und mehr...</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;p&gt;Hier finden Sie eine Auswahl meiner Beitr&amp;auml;ge aus meinem Blog auf &lt;a href="http://www.aspnezone.de"&gt;ASP.NET Zone&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;h2&gt;ASP.NET&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2009/06/29/ressourcen-aus-externen-libraries-im-markup-ausgeben.aspx"&gt;Ressourcen aus externen Libraries im Markup ausgeben&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2009/04/17/was-ist-eigentlich-asp-net.aspx"&gt;Was ist eigentlich ASP.NET?&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2009/03/12/asp-net-und-dann-war-da-noch-was.aspx"&gt;ASP.NET und dann war da noch was&amp;hellip;&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2009/03/10/die-asp-net-masterpage-ist-keine-hauptseite.aspx"&gt;Die ASP.NET-MasterPage ist keine &amp;quot;Hauptseite&amp;quot;&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2009/02/13/web-server-controls-ganz-einfach-selber-machen-teil-1.aspx"&gt;Web Server Controls ganz einfach selber machen (Teil 1)&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/10/15/webentwicklung-unterschiede-zwischen-client-und-server-programmierung.aspx"&gt;Webentwicklung: Unterschiede zwischen Client- und Server-Programmierung&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/07/07/einfache-authentifizierung-mit-asp-net.aspx"&gt;Einfache Authentifizierung mit ASP.NET&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/05/16/performance-tipp-connection-global-fuer-einen-page-request-definieren.aspx"&gt;Performance Tipp: Eine DB Connection global f&amp;uuml;r einen Page Request definieren&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/04/23/eine-einfache-bildergalerie-mit-asp-net.aspx"&gt;Eine einfache Bildergalerie mit ASP.NET&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/04/17/webcontrols-erweitern.aspx"&gt;WebControls erweitern&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/02/05/asp-net-ressourcen-clientseitig-mit-javascript-nutzen.aspx"&gt;ASP.NET Ressourcen clientseitig mit JavaScript nutzen&lt;/a&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/11/20/problem-mit-bilder-innerhalb-vom-asp-net-labels.aspx" target="_blank"&gt;Problem mit Bildern innerhalb von ASP.NET Labels&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/10/17/eigene-spaltentypen-fuer-das-gridview-erstellen.aspx" target="_blank"&gt;Eigene Spaltentypen f&amp;uuml;r das GridView erstellen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/08/23/statische-variablen-in-asp-net.aspx" target="_blank"&gt;Statische Variablen in ASP.NET&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/08/08/basisklassen-fuer-web-forms-erstellen.aspx" target="_blank"&gt;Basisklassen f&amp;uuml;r Web Forms erstellen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/07/03/barrierefreie-webseiten-mit-asp-net-2-0-teil-6.aspx" target="_blank"&gt;Barrierefreie Webseiten mit ASP.NET 2.0 - Teil 6&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/06/04/barrierefreie-webseiten-mit-asp-net-2-0-teil-5.aspx" target="_blank"&gt;Barrierefreie Webseiten mit ASP.NET 2.0 - Teil 5&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/05/11/barrierefreie-webseiten-mit-asp-net-2-0-teil-4.aspx" target="_blank"&gt;Barrierefreie Webseiten mit ASP.NET 2.0 - Teil 4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/04/17/barrierefreie-webseiten-mit-asp-net-2-0-teil-3.aspx" target="_blank"&gt;Barrierefreie Webseiten mit ASP.NET 2.0 - Teil 3&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/04/03/barrierefreie-webseiten-mit-asp-net-2-0-teil-2.aspx" target="_blank"&gt;Barrierefreie Webseiten mit ASP.NET 2.0 - Teil 2&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/03/23/barrierefreie-webseiten-mit-asp-net-2-0-teil-1.aspx" target="_blank"&gt;Barrierefreie Webseiten mit ASP.NET 2.0 - Teil 1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/03/14/druck-css-auch-mit-themes-in-asp-net.aspx" target="_blank"&gt;Druck CSS auch mit Themes in ASP.NET&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;C# / VB.NET / .NET&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/11/22/gro-e-dateien-aus-einer-datenbank-lesen-und-zum-download-bereitstellen.aspx"&gt;Gro&amp;szlig;e Dateien aus einer Datenbank lesen und zum Download bereitstellen.&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/11/22/gro-e-dateien-in-hochladen-und-in-eine-datenbank-schreiben.aspx"&gt;Gro&amp;szlig;e Dateien hochladen und in eine Datenbank schreiben&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/11/20/neues-net-3-5-feature-collection-initializers.aspx" target="_blank"&gt;Neues .NET 3.5 Feature: Collection Initializers&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/11/15/Object-Initializers.aspx" target="_blank"&gt;Neues .NET 3.5 Feature: Object Initializers&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/11/15/Automatic_5F00_Properties.aspx" target="_blank"&gt;Neues .NET 3.5 Feature: Automatic Properties&lt;/a&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/11/14/neues-net-3-5-feature-extension-methods.aspx" target="_blank"&gt;Neues .NET 3.5 Feature: Extension Methods&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/09/19/der-operator-in-c.aspx" target="_blank"&gt;Der ?? Operator in C#&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;SQL / LINQ / Datenbanken&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2009/09/28/zweiter-start-mit-nhibernate.aspx"&gt;Zweiter Start mit NHibernate&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2009/08/13/linq-to-xml-querys-auf-xml-mit-namespaces.aspx"&gt;LINQ to XML: Queries auf XML mit Namespaces&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/09/17/linq-to-xml-einen-xml-knoten-aus-einem-vorhandenem-xml-dokument-l-schen.aspx"&gt;LINQ to XML - Einen XML Knoten aus einem vorhandenem XML Dokument l&amp;ouml;schen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/09/17/linq-to-xml-xml-daten-erzeugen-und-in-ein-vorhandenes-xml-dokument-einf-gen.aspx"&gt;LINQ to XML - XML Daten erzeugen und in ein vorhandenes XML Dokument einf&amp;uuml;gen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/10/09/101-linq-beispiele-und-weitere-links.aspx"&gt;101 LINQ Beispiele und weitere Links&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/04/30/where-in-abfrage-mit-linq-to-sql.aspx"&gt;&amp;quot;WHERE IN&amp;quot; - Abfrage mit LINQ to SQL&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/01/08/Die-n_E400_chsten-f_FC00_nf-Geburtstage-mit-Access-SQL-berechnen.aspx" target="_blank"&gt;Die n&amp;auml;chsten f&amp;uuml;nf Geburtstage mit Access SQL berechnen&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Ajax&lt;br /&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2009/05/06/jquery-und-der-vorher-nachher-effekt.aspx"&gt;jQuery und der Vorher-Nachher-Effekt&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/10/31/asp-net-ajax-request-in-einem-httpmodule-erkennen.aspx"&gt;ASP.NET AJAX Request in einem HttpModule erkennen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/07/31/asynchronen-ajax-postback-erkennen.aspx"&gt;Asynchronen AJAX PostBack erkennen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/07/31/asyncpostbacktrigger-per-code-erzeugen.aspx"&gt;AsyncPostBackTrigger per Code erzeugen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2007/09/19/javascript-aufruf-nach-einem-asp-net-ajax-postback.aspx" target="_blank"&gt;JavaScript Aufruf nach einem ASP.NET Ajax PostBack&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph">
+          <text>&lt;h2&gt;Webdesign&lt;/h2&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2009/06/29/web-slices-f-r-den-ie8-ganz-einfach-selber-machen.aspx"&gt;Web Slices f&amp;uuml;r den IE8 ganz einfach selber machen&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/09/03/mehrspaltiges-layout-mit-divs-und-css.aspx"&gt;Mehrspaltiges Layout mit DIVs und CSS&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.aspnetzone.de/blogs/juergengutsch/archive/2008/04/21/100prozent-hoehe-bei-divs-mit-css.aspx"&gt;CSS: 100% H&amp;ouml;he bei DIVs&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

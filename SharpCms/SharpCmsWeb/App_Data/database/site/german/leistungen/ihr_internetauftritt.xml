@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<page>
+  <attributes>
+    <pagename>Ihr Webauftritt</pagename>
+    <name>ihr_internetauftritt</name>
+    <menuname>Ihr Webauftritt</menuname>
+    <pageidentifier>german/leistungen/ihr_internetauftritt</pageidentifier>
+    <status>hide</status>
+    <lastedited>24.07.2008</lastedited>
+    <metakeywords>Webauftritt, Webdesign, Internetseite, erstellen</metakeywords>
+    <metadescription>Ich erstelle Ihnen ihren stadnardkonformen und zukunftssicheren Webauftritt</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Ihr Webauftritt</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph">
+          <text>&lt;p&gt;Ihr Webauftritt kann den ersten Eindruck ausmachen, den ein potenzieller Kunde von Ihnen bekommt. Ihr Webauftritt sollte also nicht nur Ihre Firma pr&amp;auml;sentieren, sondern auch f&amp;uuml;r potentiellen Kunden ansprechen. Ihr Webauftritt solle nicht nur sch&amp;ouml;n sein, sondern auch schnell geladen werden. Die Seiten sollten genug Informationen vermitteln, aber auch f&amp;uuml;r jeden verst&amp;auml;ndlich sein. Ihr Webauftritt sollte g&amp;uuml;nstig sein, aber dennoch flexibel. Ihr Webauftritt sollte aktuell sein, aber ohne zus&amp;auml;tzliche Kosten zu verursachen.&lt;/p&gt;&lt;p&gt;Das alles&amp;nbsp;kann&amp;nbsp;ich Ihnen bieten. Mit Hilfe von standardkonformen Code, flexiblen Layouts und einem Content Management System, kann ich Ihnen einen g&amp;uuml;nstigen Webauftritt erstellen, der auf Sie und Ihre Firma zugeschnitten ist. Ich erstelle Ihnen einen barrierearmen Webauftritt, der f&amp;uuml;r jeden erreichbar sein kann.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>
