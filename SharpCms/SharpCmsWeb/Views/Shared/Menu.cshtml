@@ -1,13 +1,16 @@
 ﻿@using SharpCms.Core.DataObjects
-@model SharpCms.Core.DataObjects.PageInfo
+@model PageInfo
 @{
-    var path = string.Empty;
+    var rootpage = Model.Children.FirstOrDefault(x => x.NavState == NavState.OPEN && x.UrlName == ViewContext.RouteData.Values["page1"].ToString());
+    var path = String.Empty;
+    var rootpath = "/" + rootpage.UrlName;
+    
 }
 
 <ul>
-    @foreach (var page1 in Model.Children.Where(x=> x.NavState == NavState.OPEN))
+    @foreach (var page1 in rootpage.Children.Where(x => x.NavState == NavState.OPEN))
     {
-        path = "/" + page1.UrlName;
+        path = rootpath + "/" + page1.UrlName;
         <li>
             <a href="@path">@page1.Menuname</a>
             @if (page1.Children != null)
@@ -15,7 +18,7 @@
                 <ul>
                     @foreach (var page2 in page1.Children.Where(x => x.NavState == NavState.OPEN))
                     {
-                        path = "/" + page1.UrlName + "/" + page2.UrlName;
+                        path = rootpath + "/" + page1.UrlName + "/" + page2.UrlName;
                         <li>
                             <a href="@path">@page2.Menuname</a>
                             @if (page2.Children != null)
@@ -23,7 +26,7 @@
                                 <ul>
                                     @foreach (var page3 in page2.Children.Where(x => x.NavState == NavState.OPEN))
                                     {
-                                        path = "/" + page1.UrlName + "/" + page2.UrlName + "/" + page3.UrlName;
+                                        path = rootpath + "/" + page1.UrlName + "/" + page2.UrlName + "/" + page3.UrlName;
                                         <li>
                                             <a href="@path">@page3.Menuname</a>
                                         </li>

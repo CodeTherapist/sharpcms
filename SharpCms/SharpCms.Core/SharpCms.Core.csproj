@@ -53,7 +53,7 @@
     <Compile Include="DataObjects\ViewState.cs" />
     <Compile Include="Data\TempData.cs" />
     <Compile Include="IEnumerableExtensions.cs" />
-    <Compile Include="MvcHelper.cs" />
+    <Compile Include="HtmlHelperExtensions.cs" />
     <Compile Include="PageController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

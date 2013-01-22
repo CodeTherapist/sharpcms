@@ -7,7 +7,7 @@ using SharpCms.Core.DataObjects;
 
 namespace SharpCms.Core
 {
-    public static class MvcHelper
+    public static class HtmlHelperExtensions
     {
         public static SharpcmsHelper Sharpcms(this HtmlHelper htmlhelper)
         {
@@ -26,7 +26,7 @@ namespace SharpCms.Core
 
         public ICollection<Element> GetElementsForContainer(Func<Container, bool> expression)
         {
-            var model = (PageModel) _htmlhelper.ViewDataContainer.ViewData.Model;
+            var model = (PageModel)_htmlhelper.ViewContext.Controller.ViewData.Model;
             var container = model.Page.Containers.Where(expression).FirstOrDefault();
 
             if (container != null)
@@ -34,6 +34,18 @@ namespace SharpCms.Core
                 return container.Elements;
             }
             return new Collection<Element>();
+        }
+
+        public PageInfo GetCurrentPage()
+        {
+            var model = (PageModel)_htmlhelper.ViewContext.Controller.ViewData.Model;
+            return model.Page.PageInfo;
+        }
+        
+        public ICollection<PageInfo> GetSubPages()
+        {
+            var model = (PageModel)_htmlhelper.ViewContext.Controller.ViewData.Model;
+            return model.Page.PageInfo.Children;
         }
 
     }

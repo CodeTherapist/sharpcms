@@ -16,8 +16,8 @@ namespace SharpCmsWeb
                     {
                         controller = "Page",
                         action = "PageView",
-                        page1 = string.Empty,
-                        page2 = string.Empty,
+                        page1 = "german",
+                        page2 = "home",
                         page3 = string.Empty,
                         page4 = string.Empty,
                         page5 = string.Empty

@@ -1,0 +1,20 @@
+﻿@using SharpCms.Core.DataObjects
+@model Element
+
+@{
+    var pages = Html.Sharpcms().GetSubPages().Where(x=>x.NavState == NavState.OPEN);
+    if (pages.Any())
+    {
+    <ul class="overview">
+        @foreach (var page in pages)
+        {
+            <li>
+                <a href="/@page.PageIdentifier">
+                    @page.PageName<br />
+                    @page.Description
+                </a>
+            </li>
+        }
+    </ul>
+    }
+}

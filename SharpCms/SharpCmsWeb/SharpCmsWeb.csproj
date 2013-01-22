@@ -344,6 +344,7 @@
     <Content Include="Views\Page\Show.cshtml" />
     <Content Include="Views\Shared\menu.cshtml" />
     <Content Include="Views\Shared\paragraph.cshtml" />
+    <Content Include="Views\Shared\overview.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
