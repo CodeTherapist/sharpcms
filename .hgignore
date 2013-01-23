@@ -25,3 +25,4 @@ OfflineDocumentArchive/OfflineDocumentArchive.Server/Updates/ODA.Server.DummyMod
 OfflineDocumentArchive/OfflineDocumentArchive.Server/Updates/ODA.Server.DummyModule2.dll
 OfflineDocumentArchive/OfflineDocumentArchive.Server/Updates/ODA.Client.*.nupkg
 **/packages/**/*.dll-*
+SharpCms/Custom*
