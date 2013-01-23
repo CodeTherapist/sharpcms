@@ -1,90 +1,48 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <tree>
-  <german 
-    menuname="German" 
-    status="open" 
-    pageidentifier="german" 
-    pagename="German" 
-    lastedited="jig" 
-    metakeywords=""
-    metadescription="">
-    <home 
-      menuname="Start" 
-      pageidentifier="german/home" 
-      status="open" 
-      pagename="Start" 
-      lastedited="jig" 
-      metadescription="Übersicht über unsere Dienstleistungen" 
-      metakeywords="cms, content management, redaktionssystem, webdesign, webentwicklung"
-      template="">
-      <about_us menuname="Über mich" pageidentifier="german/home/about_us" status="hide" pagename="Über mich" lastedited="18.12.2007" metadescription="Fast alles über Jürgen Gutsch und GUTSCH-ONLINE" metakeywords="Jürgen, Gutsch" template="" />
-      <search menuname="Suche" pageidentifier="german/home/search" status="hide" template="" pagename="Suche" metakeywords="" metadescription="" lastedited="" />
-    </home>
-    <development menuname="Entwicklung" pageidentifier="german/development" status="open" template="" pagename="Entwicklung" metakeywords="Entwicklung, Produkte" metadescription="Entwiclung und eigene Produkte" lastedited="">
-      <products menuname="Products" pageidentifier="german/development/products" status="open" pagename="Products" lastedited="jig" metadescription="Produkte und Angebote" metakeywords="" template="">
-        <laufendeprojekte menuname="Laufende Projekte" pageidentifier="german/development/products/laufendeprojekte" status="hide" template="" pagename="Laufende Projekte" metakeywords="" metadescription="Laufende Projekte von GUTSCH-ONLINE" lastedited="16.02.2009">
-          <net_stammtisch_konstanz-kreuzlingen menuname=".NET Stammtisch Konstanz-Kreuzlingen" pageidentifier="german/development/products/laufendeprojekte/net_stammtisch_konstanz-kreuzlingen" status="open" template="" pagename=".NET Stammtisch Konstanz-Kreuzlingen" metakeywords=".NET Usergroup, commuity" metadescription=".NET Usergroup für die Region Konstanz und Kreuzlingen" lastedited="jg" />
-          <netkk menuname=".NETKK" pageidentifier="german/development/products/laufendeprojekte/netkk" status="open" template="" pagename=".NETKK" metakeywords="community, mvc, open source, asp.net" metadescription="dotnetkk ist das ASP.NET MVC Community Website Projekt das für die offizielle Website des .NET Stammtisches Konstanz-Kreuzlingen eingesetzt wird" lastedited="jg" />
-          <nman menuname="NMAN" pageidentifier="german/development/products/laufendeprojekte/nman" status="open" template="" pagename="NMAN" metakeywords="notes, appointments, tasks" metadescription="Codename: NMAN - (never miss a note)" lastedited="jg" />
-        </laufendeprojekte>
-        <referenzen menuname="Referenzen" pageidentifier="german/development/products/referenzen" status="hide" pagename="Referenzen" lastedited="24.07.2008" metakeywords="Projekte, Referenzen, c#, asp.net" metadescription="Referenzen von Jürgen Gutsch" template="" />
-        <sharpcms.de menuname="sharpcms" pageidentifier="german/development/products/sharpcms.de" status="hide" pagename="sharpcms" lastedited="22.07.2008" metakeywords="Open Source, Content Management, CMS, sharpcms" metadescription="Das Open Source Content Management Systems sharpcms" template="" />
-        <go.easydatabase menuname="GO.EasyDatabase" pageidentifier="german/development/products/go.easydatabase" status="hide" pagename="GO.EasyDatabase" lastedited="07.12.2006" metadescription="Die GO.EasyDataBase eine kleine Klassenbibliothek, die für jedes Datenbank gebundene Projekt eine feine Hilfe sein kann." metakeywords="easydatabase, datalayer, database, datenbank" template="" />
-        <go.rss menuname="GO.RSS" pageidentifier="german/development/products/go.rss" status="hide" pagename="GO.RSS" lastedited="07.12.2006" metadescription="Einfach zu handhabendes WebControl zur Erstellung von kompletten RSS-Newsfeeds der Version 0.91 und Version 2.0." metakeywords="RSS, Feed, conponent" />
-      </products>
-    </development>
-    <consulting menuname="Beratung" pageidentifier="german/consulting" status="open" template="" pagename="Beratung" metakeywords="Beratung, Consultung, Technologie, Architektur" metadescription="" lastedited="">
-      <beratung menuname="Beratung" pageidentifier="german/consulting/beratung" status="open" template="" pagename="Beratung" metakeywords="" metadescription="So funktioniert unsere Beratung" lastedited="" />
-    </consulting>
-    <learning menuname="Schulung" pageidentifier="german/learning" status="open" template="" pagename="Schulung" metakeywords="Learning, Training, Schulungen, Seminare" metadescription="Schulungen und Seminare" lastedited="">
-      <leistungen menuname="Leistungen" pageidentifier="german/learning/leistungen" status="hide" template="" pagename="Leistungen" metakeywords="" metadescription="" lastedited="" />
-      <themenpalette menuname="Themenpalette" pageidentifier="german/learning/themenpalette" status="open" template="" pagename="Themenpalette" metakeywords="" metadescription="" lastedited="" />
-    </learning>
-    <community menuname="Community" pageidentifier="german/community" status="open" template="" pagename="Community" metakeywords="Community" metadescription=".NET-Community" lastedited=""></community>
-    <about menuname="About" pageidentifier="german/about" status="open" template="" pagename="About" metakeywords="" metadescription="Über uns und vieles mehr..." lastedited="">
-      <philosophie menuname="Philosophie" pageidentifier="german/about/philosophie" status="hide" template="" pagename="Philosophie" metakeywords="" metadescription="" lastedited="" />
-      <unternehmen menuname="Unternehmen" pageidentifier="german/about/unternehmen" status="hide" template="" pagename="Unternehmen" metakeywords="" metadescription="" lastedited="" />
-      <das_team menuname="Das Team" pageidentifier="german/about/das_team" status="open" template="" pagename="Das Team" metakeywords="" metadescription="Lernen Sie das Team kennen" lastedited="" />
-      <jobs menuname="Jobs" pageidentifier="german/about/jobs" status="open" template="" pagename="Jobs" metakeywords="" metadescription="Offene Stellen bei GUTSCH-ONLINE Software GmbH" lastedited="">
-        <senior_software_developer menuname="Senior Software Developer" pageidentifier="german/about/jobs/senior_software_developer" status="open" template="" pagename="Senior Software Developer" metakeywords="" metadescription="Einen engagierten Senior Software Developer (C#, WCF, XAML, ASP.NET, HTML, Javascript)" lastedited="" />
-        <auzubildenden_zum_fachinformatiker menuname="Auzubildenden" pageidentifier="german/about/jobs/auzubildenden_zum_fachinformatiker" status="hide" template="" pagename="Auzubildenden" metakeywords="" metadescription="Einen Auzubildenden zum Fachinformatiker Anwendungsentwicklung" lastedited="" />
-      </jobs>
+  <german menuname="German" status="open" pageidentifier="german">
+    <about menuname="Start" pageidentifier="german/about" status="open" pagename="Das Open Source Content Management System sharpcms" lastedited="25.09.2007" metakeywords="sharpcms, content management, content management system, cms, xml, xslt" metadescription="sharpcms ist ein Open Source Content Management System das auf XML und XSLT basiert und complett in C# geschrieben ist" template="">
+      <news menuname="News" pageidentifier="german/about/news" status="open" pagename="News" lastedited="" metakeywords="news, sharpcms" metadescription="neuigkeiten zu sharpcms" template="" />
+      <features menuname="Features" pageidentifier="german/about/features" status="open" pagename="Features" lastedited="25.09.2007" metakeywords="sharpcms, content management, content management system, cms, xml, xslt" metadescription="die Features des sharpcms" template="" />
+      <release_notes menuname="Versionshinweise" pageidentifier="german/about/release_notes" status="hide" pagename="Versionshinweise" lastedited="25.09.2007" metakeywords="sharpcms, content management, content management system, cms, xml, xslt" metadescription="die Versionshinweise des sharpcms" />
+      <system_requirements menuname="Systemvoraussetzungen" pageidentifier="german/about/system_requirements" status="open" pagename="Systemvoraussetzungen" lastedited="05.01.2008" metakeywords="sharpcms, content management, content management system, cms, xml, xslt, system" metadescription="die Systemvoraussetzungen des sharpcms" template="" />
     </about>
-    <tutorials menuname="Publikationen" pageidentifier="german/tutorials" status="hide" pagename="Tutorials, Beispiele und Artikel" lastedited="07.12.2006" metadescription="Hier gibt es einige Tutorials, Beispiele und Artikel zum Thema asp.net, asp, vb.net, c# und VB6" metakeywords="Tutorials, asp.net, asp, vb.net, c# und VB6" template="">
-      <null menuname="Blog-Artikel" pageidentifier="german/tutorials/null" status="open" template="" pagename="Blog-Artikel" metakeywords="Blog" metadescription="Blog" lastedited="" />
-      <magazine menuname="Magazine" pageidentifier="german/tutorials/magazine" status="open" template="" pagename="Magazine" metakeywords="Magazine" metadescription="Magazine" lastedited="" />
-      <lectures menuname="Vorträge" pageidentifier="german/tutorials/lectures" status="open" template="" pagename="Vorträge" metakeywords="" metadescription="" lastedited="" />
-      <blog menuname="ASP.NET Blog" pageidentifier="german/tutorials/blog" status="hide" pagename="ASP.NET Blog" lastedited="22.07.2008" metakeywords="" metadescription="" />
-      <blogs menuname="Blogs" pageidentifier="german/tutorials/blogs" status="hide" pagename="Blogs" lastedited="02.08.2008" metakeywords="blog, weblog, feed, news feed" metadescription="Meine Blogs" template="" />
-      <tutorials menuname="Tutorials" pageidentifier="german/tutorials/tutorials" status="hide" pagename="Tutorials" lastedited="" metakeywords="" metadescription="" template="">
-        <vb.net menuname="VB.NET" pageidentifier="german/tutorials/tutorials/vb.net" status="open" pagename="VB.NET" lastedited="22.07.2008" metadescription="VB.NET Tutorials" metakeywords="VB.NET, Tutorials, beschreibungen, beispiele">
-          <settingsmanager menuname="Settingsmanager" pageidentifier="german/tutorials/tutorials/vb.net/settingsmanager" status="open" pagename="Application Settings lesen und schreiben" lastedited="25.10.2006" metadescription="Methoden, um globale und benutzerspezifische Anwendungseinstellungen zu speichern und zu lesen." metakeywords="AppSettings, Application, System.Configuration, Config.PrivateFile" />
-        </vb.net>
-        <asp.net menuname="ASP.NET" pageidentifier="german/tutorials/tutorials/asp.net" status="open" pagename="ASP.NET" lastedited="22.07.2008" metadescription="ASP.NET Tutorials" metakeywords="">
-          <listen-controls_f_llen_mit_listitems menuname="ListControls" pageidentifier="german/tutorials/tutorials/asp.net/listen-controls_f_llen_mit_listitems" status="open" pagename="Listen-Controls füllen mit ListItems" lastedited="07.01.2004" metadescription="Dieses Tutorial Beschreibt den Gebrauch von System.Web.UI.Webcontrols.Listitem mit diversen Listen-Controls" metakeywords="System.Web.UI.Webcontrols.Listitem, Listen, asp.net, vb.net" />
-          <dateiupload_in_ein_verzeichnis menuname="Dateiupload_FS" pageidentifier="german/tutorials/tutorials/asp.net/dateiupload_in_ein_verzeichnis" status="open" pagename="Dateiupload in ein Verzeichnis" lastedited="19.12.2003" metadescription="Einfacher Mehrfachupload von Dateien in ein bestimmtes Verzeichnis auf dem Server" metakeywords="Upload, asp.net, vb.net, System.Web.UI.HtmlControls.HtmlInputFile, System.Web.HttpFileCollection, Request.Files" />
-          <treeview_erstellen_mit_ms_ie_webcontrols_2_ menuname="TreeView_ 2" pageidentifier="german/tutorials/tutorials/asp.net/treeview_erstellen_mit_ms_ie_webcontrols_2_" status="open" pagename="TreeView erstellen mit MS IE Webcontrols (2)" lastedited="27.11.2003" metadescription="Erstellen eines TreeViews mit Daten aus der Datenbank. In diesem Tutorial kommen die Angeben für dei Icons ebenfalls aus der Datenbank." metakeywords="TreeView, Microsoft.Web.UI.WebControls.TreeView, asp.net, vb.net, TreeNode" />
-          <treeview_erstellen_mit_ms_ie_webcontrols menuname="TreeView_1" pageidentifier="german/tutorials/tutorials/asp.net/treeview_erstellen_mit_ms_ie_webcontrols" status="open" pagename="TreeView erstellen mit MS IE Webcontrols" lastedited="30.09.2003" metadescription="Erstellen eines TreeViews mit Daten aus der Datenbank." metakeywords="TreeView, Microsoft.Web.UI.WebControls.TreeView, asp.net, vb.net, TreeNode" />
-          <dateiupload_in_eine_datenbank menuname="Dateiupload_DB" pageidentifier="german/tutorials/tutorials/asp.net/dateiupload_in_eine_datenbank" status="open" pagename="Dateiupload in eine Datenbank" lastedited="03.05.2003" metadescription="Einfacher Mehrfachupload von Dateien in eine Datenbank auf dem Server" metakeywords="Upload, asp.net, vb.net, System.Web.UI.HtmlControls.HtmlInputFile, System.Web.HttpFileCollection, Request.Files, Datenbank" />
-        </asp.net>
-        <asp menuname="ASP" pageidentifier="german/tutorials/tutorials/asp" status="open" pagename="ASP" lastedited="22.07.2008" metadescription="ASP Tutorials" metakeywords="">
-          <activexdll-asp menuname="ActiveXDLLASP" pageidentifier="german/tutorials/tutorials/asp/activexdll-asp" status="open" pagename="Erstellen einer ActiveX-DLL und ansprechen in ASP" lastedited="22.07.2008" metakeywords="ActiveX, DLL, ScriptingContext, asp" metadescription="Dieses Tutorial beschreibt das Erstellen einer ActiveX-DLL mit Scripting Context und das ansprechen mit ASP" />
-        </asp>
-      </tutorials>
-    </tutorials>
-    <impressum menuname="Impressum" pageidentifier="german/impressum" status="hide" pagename="Impressum" lastedited="18.12.2007" metakeywords="" metadescription="" template="">
-      <kontakt menuname="Kontakt" pageidentifier="german/impressum/kontakt" status="open" pagename="Kontakt" lastedited="18.12.2007" metakeywords="" metadescription="" template="" />
-      <sitemap menuname="Sitemap" pageidentifier="german/impressum/sitemap" status="open" pagename="Sitemap" lastedited="22.07.2008" metakeywords="" metadescription="" template="" />
-    </impressum>
-    <downloads menuname="Downloads" pageidentifier="german/downloads" status="hide" pagename="Downloads" lastedited="07.12.2006" metadescription="Downloads der Tutorials und diverser Projekte" metakeywords="Downloads, Tutorials, Projekte, programmierung, vb.net, c#, asp.net, asp, VB6">
-      <go.easydatabase menuname="GO.EasyDatabase" pageidentifier="german/downloads/go.easydatabase" status="open" pagename="GO.EasyDatabase" lastedited="07.12.2006" metadescription="GO.EasyDatabase Download" metakeywords="Download, GO.EasyDatabase, Datanbank, SQL, Verbindungen, ODBC, OleDB" />
-      <tutorial_downloads menuname="Tutorial Downloads" pageidentifier="german/downloads/tutorial_downloads" status="open" pagename="Tutorial Downloads" lastedited="07.12.2006" metadescription="Downloads der Tutorials" metakeywords="Downloads, tutorials" />
-      <barrierefreies_asp.net_2.0_ menuname="Barrierefreies ASP.NET 2.0 " pageidentifier="german/downloads/barrierefreies_asp.net_2.0_" status="open" pagename="Barrierefreies ASP.NET 2.0 " lastedited="" metadescription="" metakeywords="" />
-    </downloads>
-    <deverses menuname="Deverses" pageidentifier="german/deverses" status="hide" pagename="Deverses" lastedited="" metakeywords="" metadescription="">
-      <home menuname="Home" pageidentifier="german/deverses/home" status="closed" pagename="Home" lastedited="" metakeywords="" metadescription="" />
-      <links menuname="Links" pageidentifier="german/deverses/links" status="hide" pagename="Links" lastedited="jig" metadescription="" metakeywords="" />
-    </deverses>
-    <aktion menuname="Aktion" pageidentifier="german/aktion" status="hide" template="" pagename="Aktion" lastedited="" metakeywords="" metadescription="" />
+    <support menuname="Support" pageidentifier="german/support" status="open" pagename="Support" lastedited="" metakeywords="suport, sharpcms, XML XSL, ASP.NET, C#" metadescription="support für sharpcms" template="">
+      <tips_und_tricks menuname="Tips und Tricks" pageidentifier="german/support/tips_und_tricks" status="open" pagename="Tips und Tricks" lastedited="" template="" metakeywords="tips, tricks, asp.net, c#, xml, xslt" metadescription="tips und tricks zu zu sharpcms">
+        <eventxmltrue menuname="Kein Gefummel mit URLs mehr" pageidentifier="german/support/tips_und_tricks/eventxmltrue" status="open" pagename="Kein Gefummel mit URLs mehr" lastedited="" metakeywords="event_xml, XML, Seitenstruktur" metadescription="event_xml=true zum anzeigen der XML Seitenstruktur" template="" />
+        <leeresxmlnxattribut menuname="Leeres xmlns Attribut entfernen" pageidentifier="german/support/tips_und_tricks/leeresxmlnxattribut" status="open" pagename="Leeres xmlns Attribut entfernen" lastedited="" metakeywords="xmlns, Attribut" metadescription="Leeres xmlns Attribut in HTML Tags unterbinden" template="" />
+      </tips_und_tricks>
+      <faq menuname="FAQ" pageidentifier="german/support/faq" status="open" pagename="Fragen und Antworten" lastedited="" metakeywords="" metadescription="" template="" />
+    </support>
+    <download menuname="Download" pageidentifier="german/download" status="open" pagename="Download" lastedited="05.01.2008" metakeywords="codeplex, download, sharpcms, source code, binary" metadescription="sharpcms bei codeplex herunterladen" template="" />
+    <license menuname="Lizenz" pageidentifier="german/license" status="open" pagename="Lizenz" lastedited="" metakeywords="lizenz, gpl, open source, public" metadescription="die open source lizenz vom sharpcms" template="" />
+    <cases menuname="Referenzen" pageidentifier="german/cases" status="open" pagename="Anwendungsfälle und Referenzen" lastedited="" metakeywords="referenzen, sharpcme, website, gutsch, huber" metadescription="weitere websites die mit sharpcms erstellt wurden" template="" />
+    <imprint menuname="Impressum" pageidentifier="german/imprint" status="open" pagename="Impressum" lastedited="" metakeywords="impressum, sharpcms, gutsch, huber" metadescription="alles über sharpcms und das sharpcmsprojekt" template="">
+      <contact menuname="Kontakt" pageidentifier="german/imprint/contact" status="open" pagename="Kontakt" lastedited="" metakeywords="kontakt, gutsch, huber, sharpcms" metadescription="kontakt zu den sharpcms projekt team mitgliedern" template="" />
+      <sitemap menuname="Sitemap" pageidentifier="german/imprint/sitemap" status="open" template="" pagename="Sitemap" lastedited="" metakeywords="Sitemap, sharpcms, webseiten" metadescription="Seitenübersicht von sharpcms.org" />
+    </imprint>
+    <search menuname="Suche" pageidentifier="german/search" status="open" template="" pagename="Suche" lastedited="" metakeywords="Volltextsuche" metadescription="Volltextsuche für sharpcms" />
   </german>
+  <english menuname="English" status="open" pageidentifier="english">
+    <about menuname="About" status="open" pageidentifier="english/about" pagename="The open source content management system sharpcms" lastedited="" metakeywords="content, management, system, sharpcms, cms, open source, webdevelopment, website" metadescription="sharpcms is a open source content management system, based on XML and XSLT, written in C#" template="">
+      <news menuname="News" pageidentifier="english/about/news" status="open" pagename="News" lastedited="" metakeywords="sharpcms, news cms, open source" metadescription="news about sharpcms" template="" />
+      <features menuname="Features" status="open" pageidentifier="english/about/features" pagename="Features" lastedited="" template="" metakeywords="" metadescription="" />
+      <demo menuname="Demo" status="hide" pageidentifier="english/about/demo" pagename="Demo" lastedited="" template="" metakeywords="" metadescription="" />
+    </about>
+    <support menuname="Support" status="open" pageidentifier="english/support" pagename="Support" lastedited="" metakeywords="support, sharpcms, cms, open source, website, asp.net, c#" metadescription="support for sharpcms" template="">
+      <tips_n_tricks menuname="Tips and tricks" pageidentifier="english/support/tips_n_tricks" status="open" pagename="Tips'n'tricks" lastedited="" metakeywords="tips, tricks, sharpcms" metadescription="tips and tricks about sharpcms" template="">
+        <eventxmltrue menuname="No more fiddling with URLs" pageidentifier="english/support/tips_n_tricks/eventxmltrue" status="open" template="" pagename="No more fiddling with URLs" lastedited="" metakeywords="event_xml, XML, pagestructure" metadescription="event_xml=true to show the XML of the page" />
+        <eptyxmlattribute menuname="Omitting empty xmlns from output HTML" pageidentifier="english/support/tips_n_tricks/eptyxmlattribute" status="open" template="" pagename="Omitting empty xmlns from output HTML" lastedited="" metakeywords="xmlns, attribute" metadescription="Omitting empty xmlns from output HTML" />
+      </tips_n_tricks>
+    </support>
+    <download menuname="Download" status="open" pageidentifier="english/download" pagename="Download" lastedited="" metakeywords="sharpcms, codeplex, download, asp.net, xml, xsl, c#" metadescription="download sharpcms from codeplex" template=""></download>
+    <license menuname="License" status="open" pageidentifier="english/license" pagename="License" lastedited="" metakeywords="license, gpl, open source, cms, content, management" metadescription="sharpcms is licensed under gpl" template="" />
+    <cases menuname="Cases" status="open" pageidentifier="english/cases" pagename="Cases" lastedited="" metakeywords="websites, sharpcms, gutsch, huber, cases" metadescription="cases and references build with sharpcms" template="" />
+    <imprint menuname="Imprint" pageidentifier="english/imprint" status="open" pagename="Imprint" lastedited="jg" metakeywords="sharpcms, gutsch, huber" metadescription="all about sharpcms" template="">
+      <contact menuname="Contact" pageidentifier="english/imprint/contact" status="open" pagename="Contact" lastedited="" metakeywords="sharpcms, project, contact" metadescription="contact to the sharpcms project team" template="" />
+      <sitemap menuname="Sitemap" pageidentifier="english/imprint/sitemap" status="open" template="" pagename="Sitemap" lastedited="" metakeywords="sharpcms, websites, sitemap" metadescription="Site overview on sharpcms.org" />
+    </imprint>
+    <search menuname="Search" pageidentifier="english/search" status="open" template="" pagename="Search" lastedited="" metakeywords="" metadescription="" />
+  </english>
 </tree>

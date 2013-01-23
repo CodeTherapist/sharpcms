@@ -1,35 +1,53 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <page>
   <attributes>
-    <pagename>About</pagename>
+    <pagename>Das Open Source Content Management System sharpcms</pagename>
     <name>about</name>
-    <menuname>About</menuname>
+    <menuname>Start</menuname>
     <pageidentifier>german/about</pageidentifier>
     <status>open</status>
+    <lastedited>25.09.2007</lastedited>
+    <metakeywords>sharpcms, content management, content management system, cms, xml, xslt</metakeywords>
+    <metadescription>sharpcms ist ein Open Source Content Management System das auf XML und XSLT basiert und complett in C# geschrieben ist</metadescription>
     <template></template>
-    <metakeywords></metakeywords>
-    <metadescription>Über uns und vieles mehr...</metadescription>
-    <lastedited></lastedited>
   </attributes>
   <containers>
     <container name="content">
       <elements>
-        <element type="paragraph">
-          <text>&lt;h1&gt;Lernen Sie uns kennen&lt;/h1&gt;&lt;p&gt;Die GUTSCH-ONLINE Software GmbH ist ein Startup in Engen, das nicht nur einfach Software entwickeln m&amp;ouml;chte, sondern sich zur Aufgabe gemacht, die Qualit&amp;auml;t der Softwareentwicklung und der Software&amp;nbsp;zu optimieren. Wir m&amp;ouml;chten Ihnen zeigen, wie Sie selber die Qualit&amp;auml;t Ihrer Software steigern k&amp;ouml;nnen, indem Sie die Arbeitsumgebung f&amp;uuml;r Ihre Entwickler optimieren, Ihre Arbeitsprozesse anpassen und Ihre Entwickler dahingehend sensibilisieren, allgemeing&amp;uuml;ltige Richtlinien, Prinzipien und Praktiken anzuwenden.&lt;/p&gt;&lt;h2&gt;Clean Code Developer&amp;nbsp;&lt;/h2&gt;&lt;p&gt;Wir stehen zu den Praktiken und Prinzipien der Clean Code Developer Initiative und versuchen diese in unserem Code anzuwenden und in unseren Schulungen und Seminaren zu vermitteln.&lt;/p&gt;&lt;p&gt;&lt;img src="download/Files/Pictures/dotnetpro_ccd_stempel_full_size.gif.aspx" width="468" height="60" /&gt;&lt;/p&gt;&lt;p&gt;Website: &lt;a href="http://www.clean-code-developer.de/"&gt;www.clean-code-developer.de&lt;/a&gt; &lt;/p&gt;&lt;h2&gt;ALT.NET&lt;/h2&gt;&lt;p&gt;Auch wenn Microsoft f&amp;uuml;r die .NET-Entwicklung viele gute und wertvolle Werkzeuge und Frameworks bereitstellt, gibt es dennoch auch viele sehr gute Werkzeuge und Tools in der .NET-Welt, die nicht von Microsoft stammen. So setzen wir nicht nur auf Microsoft, sondern auch auf bew&amp;auml;hrte Alternativen, wenn es dem Projekt dient.&lt;/p&gt;&lt;h2&gt;Open Source&lt;/h2&gt;&lt;p&gt;Wir setzen nicht nur Open Source Werkzeuge und Frameworks ein, sondern bem&amp;uuml;hen uns so viel wie m&amp;ouml;glich selber als Open Source zur Verf&amp;uuml;gung zu stellen. So werden Werkzeuge und Frameworks die der Allgemeinheit dienen k&amp;ouml;nnen, als quelloffene Projekte unter BitBucket der &amp;Ouml;ffentlichkeit zur Verf&amp;uuml;gung gestellt.&lt;/p&gt;</text>
+        <element type="header" publish="true" name="">
+          <text>Open Source Content Management: sharpcms</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" name="" publish="true">
+          <text>&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="show/german/about/news/"&gt;16. September 2008 - Neues vom sharpcms &lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="show/german/about/news/"&gt;26. August 2008 - Wichtige Neuigkeiten &amp;uuml;ber sharpcms&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
           <link></link>
           <picture></picture>
           <picturepos>Left</picturepos>
         </element>
-      </elements>
-    </container>
-    <container name="content2">
-      <elements>
-        <element type="freetext">
-          <text>&lt;a href="http://www.app-entwickler-verzeichnis.de/"
- title="App Programmierung" style="border: none"&gt;
-&lt;img src="http://www.app-entwickler-verzeichnis.de/images/newsletter/app-entwickler-stempel.png"
- alt="app-programmierung" width="150" height="146" 
-hspace="60" align="middle"&gt;&lt;/a&gt; </text>
+        <element type="paragraph" name="" publish="true">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;h2&gt;Open Source Content Management System&amp;nbsp;&lt;/h2&gt;
+&lt;p&gt;Diese Website pr&amp;auml;sentiert das Open Source Content Management System sharpcms.&lt;/p&gt;
+&lt;p&gt;sharpcms ist ein CMS, das mit der Absicht entwickelt wurde, folgenden Ziele zu verwirklichen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In hohem Grade flexibles Management.&lt;/li&gt;
+&lt;li&gt;Trennung zwischen Benutzung und Entwicklung.&lt;/li&gt;
+&lt;li&gt;Einfache Installation und Anwendung f&amp;uuml;r Entwickler.&lt;/li&gt;
+&lt;li&gt;Absolut freies Layouten.&lt;/li&gt;
+&lt;li&gt;Entwickelt f&amp;uuml;r kleine und mittelst&amp;auml;ndische Firmen.&lt;/li&gt;
+&lt;li&gt;Basiert auf . Net, XML, XSL, C#&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bis jetzt befindet sich sharpcms im Betastadium. Das bedeutet, da&amp;szlig; es verwendbar und stabil ist, aber noch einige raue Kanten hat. &lt;br /&gt;Das vollst&amp;auml;ndige System liegt in einem Subversion&amp;nbsp;Repository und wir empfehlen dieses zu benutzen.&lt;/p&gt;
+&lt;p&gt;Es wird im Moment noch an einer Dokumentation gearbeitet. Also bitten wir Sie unserem Dikussions Forum auf Codeplex beizutreten um die neuesten Nachrichten und Suport zu sharpcms erhalten&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #800080;"&gt;&lt;a href="http://www.codeplex.com/sharpcms/Thread/List.aspx"&gt;http://www.codeplex.com/sharpcms/Thread/List.aspx&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
         </element>
       </elements>
     </container>

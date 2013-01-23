@@ -8,11 +8,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@{ Html.RenderPartial("menu", Model.SiteTree);}
-
 @foreach (var element in Html.Sharpcms().GetElementsForContainer(x => x.Name.Equals("content")))
 {
     Html.RenderPartial(element.ElementTypeName, element);
 }
 
 
+@section News {
+    This is the footer.
+}

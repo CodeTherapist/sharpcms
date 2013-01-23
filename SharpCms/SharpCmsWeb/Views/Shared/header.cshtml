@@ -1,0 +1,23 @@
+﻿@model SharpCms.Core.DataObjects.Element
+
+@{
+    var headerstyle = Model.Parameters(x => x.Name.Equals("headerstyle")).Value.ToString();
+    var tagname = "h1";
+
+    switch (headerstyle)
+    {
+        case "Header1":
+            tagname = "h1";
+            break;
+        case "Header2":
+            tagname = "h1";
+            break;
+        case "Header3":
+            tagname = "h1";
+            break;
+    }
+}
+
+<@tagname>
+@Model.Parameters(x => x.Name.Equals("text")).Value
+</@tagname>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Web.Mvc;
+using System.Web.WebPages;
 using SharpCms.Core.DataObjects;
 
 namespace SharpCms.Core
@@ -12,6 +13,15 @@ namespace SharpCms.Core
         public static SharpcmsHelper Sharpcms(this HtmlHelper htmlhelper)
         {
             return new SharpcmsHelper(htmlhelper);
+        }
+
+        public static HelperResult RenderSection(this WebPageBase webPage, string name, Func<dynamic, HelperResult> defaultContents)
+        {
+            if (webPage.IsSectionDefined(name))
+            {
+                return webPage.RenderSection(name);
+            }
+            return defaultContents(null);
         }
     }
 

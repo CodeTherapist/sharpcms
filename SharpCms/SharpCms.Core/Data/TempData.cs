@@ -41,15 +41,15 @@ namespace SharpCms.Core.Data
                 var page = new PageInfo
                     {
                         Id = Guid.NewGuid(),
-                        PageIdentifier = element.Attribute("pageidentifier").Value,
-                        Menuname = element.Attribute("menuname").Value,
-                        PageName = element.Attribute("pagename").Value,
+                        PageIdentifier = element.Attribute("pageidentifier", String.Empty).Value,
+                        Menuname = element.Attribute("menuname", String.Empty).Value,
+                        PageName = element.Attribute("pagename", String.Empty).Value,
                         UrlName = element.Name.LocalName,
                         InPath = false,
-                        NavState = (NavState)Enum.Parse(typeof(NavState), element.Attribute("status").Value.ToUpper()),
+                        NavState = (NavState)Enum.Parse(typeof(NavState), element.Attribute("status", "open").Value.ToUpper()),
                         LastEdited = DateTime.Now,
-                        Tags = element.Attribute("metakeywords").Value.Split(new[] { ',' }),
-                        Description = element.Attribute("metadescription").Value,
+                        Tags = element.Attribute("metakeywords", String.Empty).Value.Split(new[] { ',' }),
+                        Description = element.Attribute("metadescription", String.Empty).Value,
                         Template = "Show"
                     };
                 parentPage.Children.Add(page);

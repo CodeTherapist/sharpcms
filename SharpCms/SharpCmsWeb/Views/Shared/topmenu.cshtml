@@ -1,0 +1,26 @@
+﻿@using SharpCms.Core.DataObjects
+@model PageInfo
+@{
+    var rootpage = Model.Children.FirstOrDefault(x => x.NavState == NavState.OPEN && x.UrlName == ViewContext.RouteData.Values["page1"].ToString()) ?? new PageInfo();
+    var path = String.Empty;
+    var rootpath = "/" + rootpage.UrlName;
+    
+}
+<div id="menu">
+    @if (rootpage.Children.Any())
+    {
+        <ul>
+            @foreach (var page in rootpage.Children.Where(x => x.NavState == NavState.OPEN))
+            {
+                path = rootpath + "/" + page.UrlName;
+                <li>
+                    @{
+                var classname = page.InPath ? "sel" : string.Empty;
+                    }
+                    <a href="@path" class="@classname" ><span>@page.Menuname</span>
+                        <span class="hide">| </span></a>
+                </li>
+            }
+        </ul>
+    }
+</div>

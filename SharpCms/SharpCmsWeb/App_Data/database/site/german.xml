@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <page>
   <attributes>
     <pagename>German</pagename>
@@ -6,9 +6,6 @@
     <menuname>German</menuname>
     <pageidentifier>german</pageidentifier>
     <status>open</status>
-    <lastedited>jig</lastedited>
-    <metakeywords></metakeywords>
-    <metadescription></metadescription>
   </attributes>
-  <containers />
+  <containers></containers>
 </page>
