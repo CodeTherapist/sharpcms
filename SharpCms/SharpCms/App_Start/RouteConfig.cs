@@ -16,7 +16,7 @@ namespace SharpCms
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Sharpcms", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

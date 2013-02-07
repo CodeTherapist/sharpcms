@@ -10,8 +10,38 @@
     <script src="~/Scripts/jquery.jstree.js"></script>
 </head>
 <body>
-    @RenderBody()
+    <header>
+        <img src="~/Content/images/newlogocp.png" />
 
+        <nav>
+            <ul class="mainnavi">
+                <li><a>Dashboard</a></li>
+                <li><a>Components</a>
+                    <ul>
+                        <li><a>Media</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Events</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Web Store</a></li>
+                    </ul>
+                </li>
+                <li><a>Settings</a>
+                    <ul>
+                        <li><a>Global Settings</a></li>
+                        <li><a>Users and Groups</a></li>
+                        <li><a>Mandators (SA)</a></li>
+                        <li><a>Components (SA)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        @RenderBody()
+    </section>
+    <footer>
+        
+    </footer>
     @RenderSection("scripts", required: false)
 </body>
 </html>

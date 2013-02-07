@@ -6,27 +6,53 @@ html, body, form, div
     font-family: Verdana;
 }
 
-ul.navigation
+header nav
 {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    margin-left: -5px;
+    background-color: #7697AB;
+    -moz-box-shadow: 3px 3px 4px gray;
+    -webkit-box-shadow: 3px 3px 4px gray;
+    box-shadow: 3px 3px 4px gray;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='gray')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='gray');
 }
 
-    ul.navigation > li
+header img
+{
+    margin: 5px 0 0 20px;
+}
+
+section
+{
+    margin: 30px 10px 10px 27px;
+}
+
+    section table, section table th, section table td
     {
-        border-bottom: 1px solid black;
+        border: 1px solid #7697AB;
+        border-collapse: collapse;
     }
 
-        ul.navigation > li > a
+        section table th, section table td
         {
-            display: block;
             padding: 4px;
-            text-decoration: none;
-            color: black;
         }
 
-            ul.navigation > li > a:hover
-            {
-                background-color: silver;
-            }
+        section table th
+        {
+            color: white;
+            background-color: #7697AB;
+        }
+
+    section table
+    {
+        -moz-box-shadow: 3px 3px 4px gray;
+        -webkit-box-shadow: 3px 3px 4px gray;
+        box-shadow: 3px 3px 4px gray;
+        /* For IE 8 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='gray')";
+        /* For IE 5.5 - 7 */
+        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='gray');
+    }

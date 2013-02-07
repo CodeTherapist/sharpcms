@@ -171,7 +171,8 @@
     <Content Include="Content\images\treeview-red-line.gif" />
     <Content Include="Content\images\treeview-red.gif" />
     <Content Include="Content\jquery.treeview.css" />
-    <Content Include="Content\newlogocp.png" />
+    <Content Include="Content\navigation.css" />
+    <Content Include="Content\images\newlogocp.png" />
     <Content Include="Content\Shell.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -273,10 +274,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Sharpcms\Index.cshtml" />
-    <Content Include="Views\Mandator\Navigation.cshtml" />
-    <Content Include="Views\Sites\Index.cshtml" />
-    <Content Include="Views\Mandator\DashBoard.cshtml" />
-    <Content Include="Views\Page\Tree.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
