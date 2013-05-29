@@ -15,5 +15,8 @@
 
 
 @section News {
-    This is the footer.
+    @foreach (var element in Html.Sharpcms().GetElementsForContainer(x => x.Name.Equals("news")))
+    {
+        Html.RenderPartial(element.ElementTypeName, element);
+    }
 }

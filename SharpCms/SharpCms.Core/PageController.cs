@@ -21,15 +21,15 @@ namespace SharpCms.Core
 
         private PageModel CreatePageModel(PageInfo siteTree, IList<string> path)
         {
-            var homepage = GetCurrentPageInfo(siteTree, path, 0);
+            var currentpage = GetCurrentPageInfo(siteTree, path, 0);
 
-            var containers = PageData.GetCurrentPageContainers(homepage);
+            var containers = PageData.GetCurrentPageContainers(currentpage);
 
             var page = new PageModel
                 {
                     Page = new Page
                         {
-                            PageInfo = homepage,
+                            PageInfo = currentpage,
                             Containers = containers
                         },
                     SiteTree = siteTree

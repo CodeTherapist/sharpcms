@@ -33,7 +33,23 @@
       </elements>
     </container>
     <container name="news">
-      <elements></elements>
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>News</text>
+          <headerstyle>Header2</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>
+            &lt;p&gt;Hier könnten News stehen die ein Redakteur im Backend gepflegt hat&lt;/p&gt;
+          </text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
     </container>
   </containers>
 </page>

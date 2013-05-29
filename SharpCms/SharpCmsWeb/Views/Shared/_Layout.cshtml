@@ -32,30 +32,60 @@
                     </div>
                     <div id="topmenu">
                         <ul>
-                            <li>
-                                <a href="/german/about/">
-                                    <span>German</span>
-                                    <span class="hide">| </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/english/imprint/">
-                                    <span>Imprint</span>
-                                    <span class="hide">| </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/english/imprint/sitemap/">
-                                    <span>Sitemap</span>
-                                    <span class="hide">| </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/english/imprint/contact/">
-                                    <span>Contact</span>
-                                    <span class="hide">| </span>
-                                </a>
-                            </li>
+                            @if (ViewContext.RouteData.Values["page1"].ToString() == "english")
+                            {
+                                <li>
+                                    <a href="/german/about/">
+                                        <span>German</span>
+                                        <span class="hide">| </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/english/imprint/">
+                                        <span>Imprint</span>
+                                        <span class="hide">| </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/english/imprint/sitemap/">
+                                        <span>Sitemap</span>
+                                        <span class="hide">| </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/english/imprint/contact/">
+                                        <span>Contact</span>
+                                        <span class="hide">| </span>
+                                    </a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li>
+                                    <a href="/english/about/">
+                                        <span>English</span>
+                                        <span class="hide">| </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/german/imprint/">
+                                        <span>Impressum</span>
+                                        <span class="hide">| </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/german/imprint/sitemap/">
+                                        <span>Sitemap</span>
+                                        <span class="hide">| </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/german/imprint/contact/">
+                                        <span>Kontakt</span>
+                                        <span class="hide">| </span>
+                                    </a>
+                                </li>
+                            }
                         </ul>
                     </div>
                     <div class="clear"></div>
@@ -66,11 +96,11 @@
                         <p>
                             @if (ViewContext.RouteData.Values["page1"].ToString() == "english")
                             {
-                                <span>This website hosts the open source content management system "sharpcms". It is a CMS purely based on XML &amp; XSLT.</span>
+                                <span>This website hosts the open source content management system "sharpcms". It is a CMS purely based on ASP.NET MVC 4</span>
                             }
                             else
                             {
-                                <span>Diese Website präsentiert das Open Source Content Management System "sharpcms". Dies ist ein CMS das nur auf XML &amp; XSLT basiert.</span>
+                                <span>Diese Website präsentiert das Open Source Content Management System "sharpcms". Dies ist ein CMS das komplett auf ASP.NET MVC 4 basiert</span>
                             }
                         </p>
                     </div>
@@ -85,13 +115,14 @@
                 <div id="col2">
                     <div id="col2_content" class="clearfix">
                         @{ Html.RenderPartial("submenu", ((PageModel)ViewContext.ViewData.Model).SiteTree); }
+                        <p>&nbsp;</p>
                         @this.RenderSection("News", @<span>This is the default!</span>)
                     </div>
                 </div>
                 <div id="col3">
                     <div id="col3_content" class="clearfix">
                         <div id="contentcontainer">
-                            @{ /* debugmessate */ }
+                            @{ /* debugmessage */ }
                             @RenderBody()
 
                         </div>
