@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCms", "SharpCms\SharpCms.csproj", "{B1CF6E6D-6300-4754-ACAE-5408D670176E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCms.Tests", "SharpCms.Tests\SharpCms.Tests.csproj", "{BD13D92A-782A-4492-A220-B3DDD254CA68}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCms.Core", "SharpCms.Core\SharpCms.Core.csproj", "{77230FBD-D49F-4567-BFCF-0FC92D040124}"
@@ -11,16 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCmsWeb", "SharpCmsWeb\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCmsWeb.Tests", "SharpCmsWeb.Tests\SharpCmsWeb.Tests.csproj", "{A95903BC-D51E-4B3A-8257-96020A494E88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCms.Mvc", "SharpCms.Mvc\SharpCms.Mvc.csproj", "{79921822-0DF2-4B32-A58D-C2D4292F4E68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B1CF6E6D-6300-4754-ACAE-5408D670176E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B1CF6E6D-6300-4754-ACAE-5408D670176E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B1CF6E6D-6300-4754-ACAE-5408D670176E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B1CF6E6D-6300-4754-ACAE-5408D670176E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BD13D92A-782A-4492-A220-B3DDD254CA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BD13D92A-782A-4492-A220-B3DDD254CA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD13D92A-782A-4492-A220-B3DDD254CA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,6 +33,10 @@ Global
 		{A95903BC-D51E-4B3A-8257-96020A494E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A95903BC-D51E-4B3A-8257-96020A494E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A95903BC-D51E-4B3A-8257-96020A494E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79921822-0DF2-4B32-A58D-C2D4292F4E68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79921822-0DF2-4B32-A58D-C2D4292F4E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79921822-0DF2-4B32-A58D-C2D4292F4E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79921822-0DF2-4B32-A58D-C2D4292F4E68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

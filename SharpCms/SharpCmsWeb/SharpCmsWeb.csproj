@@ -84,14 +84,6 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="System.Net.Http">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.WebRequest">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
     </Reference>
@@ -126,6 +118,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MandatorController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SharpcmsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SitesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -153,14 +151,18 @@
     <Content Include="App_Data\database\site\english\support\tips_n_tricks\eptyxmlattribute.xml" />
     <Content Include="App_Data\database\site\english\support\tips_n_tricks\eventxmltrue.xml" />
     <Content Include="App_Data\database\site\german.xml" />
-    <Content Include="App_Data\database\site\german\about.xml" />
+    <Content Include="App_Data\database\site\german\about.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\database\site\german\about\features.xml" />
     <Content Include="App_Data\database\site\german\about\news.xml" />
     <Content Include="App_Data\database\site\german\about\release_notes.xml" />
     <Content Include="App_Data\database\site\german\about\system_requirements.xml" />
     <Content Include="App_Data\database\site\german\cases.xml" />
     <Content Include="App_Data\database\site\german\download.xml" />
-    <Content Include="App_Data\database\site\german\imprint.xml" />
+    <Content Include="App_Data\database\site\german\imprint.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\database\site\german\imprint\contact.xml" />
     <Content Include="App_Data\database\site\german\imprint\null.xml" />
     <Content Include="App_Data\database\site\german\imprint\search.xml" />
@@ -174,6 +176,98 @@
     <Content Include="App_Data\database\site\german\support\tips_und_tricks\eventxmltrue.xml" />
     <Content Include="App_Data\database\site\german\support\tips_und_tricks\leeresxmlnxattribut.xml" />
     <Content Include="App_Data\database\tree.xml" />
+    <Content Include="Areas\Admin\Content\images\ajax-loader.gif" />
+    <Content Include="Areas\Admin\Content\images\file.gif" />
+    <Content Include="Areas\Admin\Content\images\folder-closed.gif" />
+    <Content Include="Areas\Admin\Content\images\folder.gif" />
+    <Content Include="Areas\Admin\Content\images\minus.gif" />
+    <Content Include="Areas\Admin\Content\images\newlogocp.png" />
+    <Content Include="Areas\Admin\Content\images\plus.gif" />
+    <Content Include="Areas\Admin\Content\images\treeview-black-line.gif" />
+    <Content Include="Areas\Admin\Content\images\treeview-black.gif" />
+    <Content Include="Areas\Admin\Content\images\treeview-default-line.gif" />
+    <Content Include="Areas\Admin\Content\images\treeview-default.gif" />
+    <Content Include="Areas\Admin\Content\images\treeview-famfamfam-line.gif" />
+    <Content Include="Areas\Admin\Content\images\treeview-famfamfam.gif" />
+    <Content Include="Areas\Admin\Content\images\treeview-gray-line.gif" />
+    <Content Include="Areas\Admin\Content\images\treeview-gray.gif" />
+    <Content Include="Areas\Admin\Content\images\treeview-red-line.gif" />
+    <Content Include="Areas\Admin\Content\images\treeview-red.gif" />
+    <Content Include="Areas\Admin\Content\jquery.treeview.css" />
+    <Content Include="Areas\Admin\Content\navigation.css" />
+    <Content Include="Areas\Admin\Content\Shell.css" />
+    <Content Include="Areas\Admin\Content\Site.css" />
+    <Content Include="Areas\Admin\Content\themes\base\images\animated-overlay.gif" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Areas\Admin\Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery-ui.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.menu.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.spinner.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Areas\Admin\Content\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\animated-overlay.gif" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Areas\Admin\Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Areas\Admin\Content\themes\classic\d.gif" />
+    <Content Include="Areas\Admin\Content\themes\classic\d.png" />
+    <Content Include="Areas\Admin\Content\themes\classic\dot_for_ie.gif" />
+    <Content Include="Areas\Admin\Content\themes\classic\style.css" />
+    <Content Include="Areas\Admin\Content\themes\classic\throbber.gif" />
+    <Content Include="Areas\Admin\Content\themes\default\d.gif" />
+    <Content Include="Areas\Admin\Content\themes\default\d.png" />
+    <Content Include="Areas\Admin\Content\themes\default\style.css" />
+    <Content Include="Areas\Admin\Content\themes\default\throbber.gif" />
     <Content Include="Content\basemod.css" />
     <Content Include="Content\central.css" />
     <Content Include="Content\content.css" />
@@ -250,6 +344,10 @@
     <Content Include="img\ext_link.gif" />
     <Content Include="img\ext_mail.gif" />
     <Content Include="img\slogo.gif" />
+    <Content Include="Areas\Admin\Views\Web.config" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Error.cshtml" />
+    <Content Include="Areas\Admin\Views\Sharpcms\Index.cshtml" />
     <None Include="Properties\PublishProfiles\sharpcms - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\sharpcms - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.0.1.intellisense.js" />
@@ -257,6 +355,7 @@
     <Content Include="Scripts\jquery-2.0.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.min.js" />
+    <Content Include="Scripts\jquery.jstree.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -334,6 +433,8 @@
     <Content Include="Views\Shared\faq.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Scripts\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
@@ -344,6 +445,10 @@
     <ProjectReference Include="..\SharpCms.Core\SharpCms.Core.csproj">
       <Project>{77230fbd-d49f-4567-bfcf-0fc92d040124}</Project>
       <Name>SharpCms.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpCms.Mvc\SharpCms.Mvc.csproj">
+      <Project>{79921822-0df2-4b32-a58d-c2d4292f4e68}</Project>
+      <Name>SharpCms.Mvc</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
@@ -374,6 +479,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.5\tools\Microsoft.Bcl.Build.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
