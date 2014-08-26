@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using SharpCms.Core.DataObjects;
+using System.Web.Mvc;
+using System.Web.WebPages;
 
 namespace SharpCms.Mvc
 {
@@ -20,49 +18,6 @@ namespace SharpCms.Mvc
                 return webPage.RenderSection(name);
             }
             return defaultContents(null);
-        }
-    }
-
-    public class SharpcmsHelper
-    {
-        private readonly HtmlHelper _htmlhelper;
-
-        public SharpcmsHelper(HtmlHelper htmlhelper)
-        {
-            _htmlhelper = htmlhelper;
-        }
-
-        public ICollection<Element> GetElementsForContainer(Func<Container, bool> expression)
-        {
-            var model = (PageModel)_htmlhelper.ViewContext.Controller.ViewData.Model;
-            var container = model.Page.Containers.Where(expression).FirstOrDefault();
-
-            if (container != null)
-            {
-                return container.Elements;
-            }
-            return new Collection<Element>();
-        }
-
-        public PageInfo GetCurrentPage()
-        {
-            var model = (PageModel)_htmlhelper.ViewContext.Controller.ViewData.Model;
-            return model.Page.PageInfo;
-        }
-        
-        public ICollection<PageInfo> GetSubPages()
-        {
-            var model = (PageModel)_htmlhelper.ViewContext.Controller.ViewData.Model;
-            return model.Page.PageInfo.Children;
-        }
-
-    }
-
-    public static class ElementExtensions
-    {
-        public static Parameter Parameters(this Element element, Func<Parameter, bool> expression)
-        {
-            return element.Parameters.Where(expression).FirstOrDefault();
         }
     }
 }

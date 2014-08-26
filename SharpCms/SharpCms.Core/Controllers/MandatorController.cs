@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Web.Mvc;
 
-namespace SharpCmsWeb.Areas.Admin.Controllers
+namespace SharpCms.Core.Controllers
 {
     public class MandatorController : Controller
     {

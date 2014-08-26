@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{77230FBD-D49F-4567-BFCF-0FC92D040124}</ProjectGuid>
+    <ProjectGuid>{C7522E3D-A8A7-4060-A546-6F38078F3E06}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SharpCms.Core</RootNamespace>
-    <AssemblyName>SharpCms.Core</AssemblyName>
+    <RootNamespace>SharpCms.Data.FileSystem</RootNamespace>
+    <AssemblyName>SharpCms.Data.FileSystem</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -21,23 +21,23 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,31 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contracts\Data\IPageProvider.cs" />
-    <Compile Include="Contracts\Data\ISitetreeProvider.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\MandatorController.cs" />
-    <Compile Include="Controllers\SharpcmsController.cs" />
-    <Compile Include="Controllers\SitesController.cs" />
-    <Compile Include="DataObjects\GroupInfo.cs" />
-    <Compile Include="DataObjects\Container.cs" />
-    <Compile Include="DataObjects\Element.cs" />
-    <Compile Include="DataObjects\NavState.cs" />
-    <Compile Include="DataObjects\Page.cs" />
-    <Compile Include="DataObjects\PageInfo.cs" />
-    <Compile Include="DataObjects\PageModel.cs" />
-    <Compile Include="DataObjects\PageState.cs" />
-    <Compile Include="DataObjects\UserInfo.cs" />
-    <Compile Include="DataObjects\ViewState.cs" />
-    <Compile Include="ElementExtensions.cs" />
-    <Compile Include="IEnumerableExtensions.cs" />
-    <Compile Include="Controllers\PageController.cs" />
+    <Compile Include="PageProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XElementExtensions.cs" />
+    <Compile Include="SitetreeProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataObjects\Core.Data.cd" />
+    <ProjectReference Include="..\SharpCms.Core\SharpCms.Core.csproj">
+      <Project>{77230FBD-D49F-4567-BFCF-0FC92D040124}</Project>
+      <Name>SharpCms.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

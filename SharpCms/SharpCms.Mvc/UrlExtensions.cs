@@ -1,4 +1,6 @@
-﻿namespace SharpCms.Mvc
+﻿using System.Web.Mvc;
+
+namespace SharpCms.Mvc
 {
     public static class UrlExtensions
     {

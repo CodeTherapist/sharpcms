@@ -1,18 +1,27 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
-using SharpCms.Core.Data;
+using SharpCms.Core.Contracts.Data;
 using SharpCms.Core.DataObjects;
 
-namespace SharpCms.Core
+namespace SharpCms.Core.Controllers
 {
     public class PageController : Controller
     {
+        private readonly ISitetreeProvider _sitetreeProvider;
+        private readonly IPageProvider _pageProvider;
+
+        public PageController(ISitetreeProvider sitetreeProvider, IPageProvider pageProvider)
+        {
+            _sitetreeProvider = sitetreeProvider;
+            _pageProvider = pageProvider;
+        }
+
         public ActionResult PageView(string page1, string page2, string page3, string page4, string page5)
         {
             var path = new[] { page1, page2, page3, page4, page5 };
 
-            var siteTree = PageData.GetSiteTree();
+            var siteTree = _sitetreeProvider.GetSiteTree();
 
             var model = CreatePageModel(siteTree, path);
 
@@ -23,7 +32,7 @@ namespace SharpCms.Core
         {
             var currentpage = GetCurrentPageInfo(siteTree, path, 0);
 
-            var containers = PageData.GetCurrentPageContainers(currentpage);
+            var containers = _pageProvider.GetCurrentPageContainers(currentpage);
 
             var page = new PageModel
                 {
